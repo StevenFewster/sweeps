@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/static-sweep' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/sweeps' : '',
 };
 
 export default nextConfig;
