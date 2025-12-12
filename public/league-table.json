@@ -1,0 +1,108 @@
+{
+  "teams": [
+    {
+      "position": 1,
+      "shortName": "ARS",
+      "name": "Arsenal"
+    },
+    {
+      "position": 2,
+      "shortName": "MCI",
+      "name": "Manchester City"
+    },
+    {
+      "position": 3,
+      "shortName": "AVL",
+      "name": "Aston Villa"
+    },
+    {
+      "position": 4,
+      "shortName": "CRY",
+      "name": "Crystal Palace"
+    },
+    {
+      "position": 5,
+      "shortName": "CHE",
+      "name": "Chelsea"
+    },
+    {
+      "position": 6,
+      "shortName": "MUN",
+      "name": "Manchester United"
+    },
+    {
+      "position": 7,
+      "shortName": "EVE",
+      "name": "Everton"
+    },
+    {
+      "position": 8,
+      "shortName": "BHA",
+      "name": "Brighton & Hove Albion"
+    },
+    {
+      "position": 9,
+      "shortName": "SUN",
+      "name": "Sunderland"
+    },
+    {
+      "position": 10,
+      "shortName": "LIV",
+      "name": "Liverpool"
+    },
+    {
+      "position": 11,
+      "shortName": "TOT",
+      "name": "Tottenham Hotspur"
+    },
+    {
+      "position": 12,
+      "shortName": "NEW",
+      "name": "Newcastle United"
+    },
+    {
+      "position": 13,
+      "shortName": "BOU",
+      "name": "AFC Bournemouth"
+    },
+    {
+      "position": 14,
+      "shortName": "BRE",
+      "name": "Brenford"
+    },
+    {
+      "position": 15,
+      "shortName": "FUL",
+      "name": "Fulham"
+    },
+    {
+      "position": 16,
+      "shortName": "LEE",
+      "name": "Leeds United"
+    },
+    {
+      "position": 17,
+      "shortName": "NFO",
+      "name": "Nottingham Forest"
+    },
+    {
+      "position": 18,
+      "shortName": "WHU",
+      "name": "West Ham United"
+    },
+    {
+      "position": 19,
+      "shortName": "BUR",
+      "name": "Burnley"
+    },
+    {
+      "position": 20,
+      "shortName": "WOL",
+      "name": "Wolverhampton Wanderers"
+    }
+  ],
+  "gamesPlayed": 15,
+  "totalGoals": 423,
+  "estimatedTotalGoals": 1072,
+  "timestamp": "2025-12-12T20:07:19.423Z"
+}

@@ -1,0 +1,13 @@
+{
+    "username": "Grant",
+    "tieBreaker": 1149,
+    "predictions": [
+        { "pos": 1, "team": "LIV" },
+        { "pos": 2, "team": "ARS" },
+        { "pos": 3, "team": "MCI" },
+        { "pos": 4, "team": "CHE" },
+        { "pos": 18, "team": "WOL" },
+        { "pos": 19, "team": "BUR" },
+        { "pos": 20, "team": "SUN" }
+    ]
+}

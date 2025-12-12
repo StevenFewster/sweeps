@@ -1,0 +1,13 @@
+{
+    "username": "Ian",
+    "tieBreaker": 1094,
+    "predictions": [
+        { "pos": 1, "team": "ARS" },
+        { "pos": 2, "team": "LIV" },
+        { "pos": 3, "team": "CHE" },
+        { "pos": 4, "team": "MCI" },
+        { "pos": 18, "team": "SUN" },
+        { "pos": 19, "team": "WOL" },
+        { "pos": 20, "team": "BUR" }
+    ]
+}

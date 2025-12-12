@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme="dracula"] {
+  color-scheme: dark;
+}

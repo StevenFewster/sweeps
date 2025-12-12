@@ -1,0 +1,22 @@
+[
+    { "shortName": "ARS", "fullName": "Arsenal", "code": "ARS", "color": "#EF0107" },
+    { "shortName": "AVL", "fullName": "Aston Villa", "code": "AVL", "color": "#95CAED" },
+    { "shortName": "BHA", "fullName": "Brighton & Hove Albion", "code": "BHA", "color": "#0057B8" },
+    { "shortName": "BUR", "fullName": "Burnley", "code": "BUR", "color": "#6C1D45" },
+    { "shortName": "BRE", "fullName": "Brenford", "code": "BRE", "color": "#6C1D45" },
+    { "shortName": "CHE", "fullName": "Chelsea", "code": "CHE", "color": "#034694" },
+    { "shortName": "CRY", "fullName": "Crystal Palace", "code": "CRY", "color": "#1B458F" },
+    { "shortName": "EVE", "fullName": "Everton", "code": "EVE", "color": "#003399" },
+    { "shortName": "FUL", "fullName": "Fulham", "code": "FUL", "color": "#000000" },
+    { "shortName": "LIV", "fullName": "Liverpool", "code": "LIV", "color": "#C8102E" },
+    { "shortName": "LEE", "fullName": "Leeds United", "code": "LEE", "color": "#C8102E" },
+    { "shortName": "SUN", "fullName": "Sunderland", "code": "SUN", "color": "#FF5A00" },
+    { "shortName": "MCI", "fullName": "Manchester City", "code": "MCI", "color": "#6CABDD" },
+    { "shortName": "MUN", "fullName": "Manchester United",  "code":  "MUN",  "color":  "#DA291C"  },
+    {  "shortName":  "NEW",  "fullName":  "Newcastle United",  "code":  "NEW",  "color":  "#241F20"  },
+    {  "shortName":  "NFO",  "fullName":  "Nottingham Forest",  "code":  "NFO",  "color":  "#E03A3E"  },
+    {  "shortName":  "TOT",  "fullName":  "Tottenham Hotspur",  "code":  "TOT",  "color":  "#132257"  },
+    {  "shortName":  "WHU",  "fullName":  "West Ham United",  "code":  "WHU",  "color":  "#7A263A"  },
+    {  "shortName":  "WOL",  "fullName":  "Wolverhampton Wanderers",  "code":  "WOL",  "color":  "#FDB913"  },
+    {  "shortName":  "BOU",  "fullName":  "AFC Bournemouth",  "code":  "BOU",  "color":  "#FDB913"  }
+]
