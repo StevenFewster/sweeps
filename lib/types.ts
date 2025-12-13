@@ -42,4 +42,5 @@ export interface PlayerScore {
 export interface ScoresData {
   players: PlayerScore[];
   estimatedTotalGoals: number;
+  generatedAt: string;
 }

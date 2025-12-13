@@ -39,6 +39,7 @@ export default async function ScoresPage() {
               <ScoresTable
                 players={data.players}
                 estimatedTotalGoals={data.estimatedTotalGoals}
+                timestamp={data.generatedAt}
               />
             )}
           </div>

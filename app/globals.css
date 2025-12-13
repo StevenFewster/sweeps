@@ -5,3 +5,10 @@
 [data-theme="dracula"] {
   color-scheme: dark;
 }
+
+.row-color-1 {
+  @apply bg-blue-200;
+}
+.row-color-5 {
+  @apply bg-yellow-200;
+}
