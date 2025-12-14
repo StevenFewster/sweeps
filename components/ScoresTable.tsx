@@ -48,7 +48,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
             <React.Fragment key={`${player.name}-${index}`}>
               <tr
                 onClick={() => togglePlayer(player.name)}
-                className="cursor-pointer hover:bg-primar y"
+                className="cursor-pointer hover:bg-primary"
               >
                 <td>{index + 1}</td>
                 <td className="font-semibold">{player.name}</td>
