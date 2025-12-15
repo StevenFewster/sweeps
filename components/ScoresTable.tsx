@@ -11,9 +11,37 @@ interface ScoresTableProps {
 
 export default function ScoresTable({ players, estimatedTotalGoals, timestamp }: ScoresTableProps) {
   const [expandedPlayer, setExpandedPlayer] = useState<string | null>(null);
+  const [copiedPlayer, setCopiedPlayer] = useState<string | null>(null);
 
   const togglePlayer = (playerName: string) => {
     setExpandedPlayer(expandedPlayer === playerName ? null : playerName);
+  };
+
+  const generateShareText = (player: PlayerScore) => {
+    // Sort team scores by position to get top 7
+    const sortedTeams = [...player.teamScores].sort((a, b) => a.position - b.position);
+    const top7 = sortedTeams.slice(0, 7);
+    
+    // Generate boxes: 🟨 for 5 points, 🟦 for 1 point, ⬛ for 0 points
+    const boxes = top7.map(team => {
+      if (team.score === 5) return '🟨';
+      if (team.score === 1) return '🟦';
+      return '⬛';
+    }).join('');
+    
+    const url = `${window.location.origin}/sweeps/scores`;
+    return `PL Sweepstake 2025/26\n${boxes} ${player.totalScore}\n${url}`;
+  };
+
+  const handleShare = async (player: PlayerScore) => {
+    const shareText = generateShareText(player);
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopiedPlayer(player.name);
+      setTimeout(() => setCopiedPlayer(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
   };
 
   const formatTimestamp = (ts: string) => {
@@ -113,6 +141,24 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                             ))}
                           </tbody>
                         </table>
+                        <div className="mt-4 flex justify-end">
+                          <button 
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleShare(player);
+                            }}
+                            className="btn btn-sm btn-primary btn-outline"
+                          >
+                            {copiedPlayer === player.name ? '✓ Copied!' : (
+                              <>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                                </svg>
+                                Share Result
+                              </>
+                            )}
+                          </button>
+                        </div>
                       </div>
                     </td>
                   </tr>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PL Sweepstake 2024/25",
+  title: "PL Sweepstake 2025/26",
   description: "Premier League prediction sweepstake tracker",
 };
 

@@ -1,4 +1,4 @@
-# Static Sweepstake - PL 2024/25
+# Static Sweepstake - PL 2025/26
 
 A static Next.js website for tracking Premier League prediction sweepstake scores.
 

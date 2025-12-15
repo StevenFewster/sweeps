@@ -6,7 +6,7 @@ export default function Home() {
       <div className="card bg-base-100 shadow-xl max-w-md">
         <div className="card-body items-center text-center">
           <h1 className="card-title text-4xl font-bold mb-4">
-            Welcome to the PL Sweepstake 2024/25
+            Welcome to the PL Sweepstake 2025/26
           </h1>
           <p className="text-lg mb-6">
             Track predictions and scores for the Premier League season

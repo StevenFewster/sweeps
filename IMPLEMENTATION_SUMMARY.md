@@ -7,7 +7,7 @@ I've successfully created a complete three-page static sweepstake site based on 
 ### ✅ Completed Features
 
 #### 1. **Landing Page** (`/`)
-- Welcome message: "Welcome to the PL Sweepstake 2024/25"
+- Welcome message: "Welcome to the PL Sweepstake 2025/26"
 - Enter button that navigates to the scores page
 - Styled with DaisyUI components
 
