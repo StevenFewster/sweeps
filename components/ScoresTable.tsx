@@ -32,6 +32,22 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
     return `${getOrdinal(day)} ${month}, ${year}`;
   };
 
+  const getDifference = (tieBreaker: number) => {
+    return tieBreaker - estimatedTotalGoals;
+  };
+
+  const getDifferenceColor = (diff: number) => {
+    return diff > 0 ? 'text-blue-500' : 'text-red-500';
+  };
+
+  const getDifferenceIcon = (diff: number) => {
+    return diff > 0 ? '+' : '-';
+  };
+
+  const getDotCount = (diff: number) => {
+    return Math.ceil(Math.abs(diff) / 10);
+  };
+
   return (
     <div className="overflow-x-auto">
       <table className="table table-zebra w-full">
@@ -44,47 +60,66 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
           </tr>
         </thead>
         <tbody>
-          {players.map((player, index) => (
-            <React.Fragment key={`${player.name}-${index}`}>
-              <tr
-                onClick={() => togglePlayer(player.name)}
-                className="cursor-pointer hover:bg-primary"
-              >
-                <td>{index + 1}</td>
-                <td className="font-semibold">{player.name}</td>
-                <td>{player.totalScore}</td>
-                <td>{player.tieBreaker}</td>
-              </tr>
-              {expandedPlayer === player.name && (
-                <tr>
-                  <td colSpan={4} className="bg-base-200 p-0">
-                    <div className="p-4">
-                      <table className="table table-sm w-full">
-                        <thead>
-                          <tr>
-                            <th>Pos</th>
-                            <th>Team</th>
-                            <th>Actual</th>
-                            <th>Score</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {player.teamScores.map((teamScore) => (
-                            <tr key={`${player.name}-${teamScore.team}`} className={`row-color-${teamScore.score}`}>
-                              <td>{teamScore.position}</td>
-                              <td>{teamScore.team}</td>
-                              <td>{teamScore.actualPosition}</td>
-                              <td className="font-semibold">{teamScore.score}</td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
+          {players.map((player, index) => {
+            const diff = getDifference(player.tieBreaker);
+            const colorClass = getDifferenceColor(diff);
+            const icon = getDifferenceIcon(diff);
+            const dotCount = getDotCount(diff);
+            
+            return (
+              <React.Fragment key={`${player.name}-${index}`}>
+                <tr
+                  onClick={() => togglePlayer(player.name)}
+                  className="cursor-pointer"
+                >
+                  <td>{index + 1}</td>
+                  <td className="font-semibold">{player.name}</td>
+                  <td>{player.totalScore}</td>
+                  <td>
+                    <div className="flex items-center gap-4">
+                      <span>{player.tieBreaker}</span>
+                      {diff !== 0 && (
+                        <span 
+                          className={`${colorClass} cursor-help`}
+                          title={`${icon}${Math.abs(diff)}`}
+                        >
+                          {'●'.repeat(dotCount)}
+                        </span>
+                      )}
                     </div>
                   </td>
                 </tr>
-              )}
-            </React.Fragment>
-          ))}
+                {expandedPlayer === player.name && (
+                  <tr>
+                    <td colSpan={4} className="bg-base-200 p-0">
+                      <div className="p-4">
+                        <table className="table table-sm w-full">
+                          <thead>
+                            <tr>
+                              <th>Pos</th>
+                              <th>Team</th>
+                              <th>Actual</th>
+                              <th>Score</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {player.teamScores.map((teamScore) => (
+                              <tr key={`${player.name}-${teamScore.team}`} className={`row-color-${teamScore.score}`}>
+                                <td>{teamScore.position}</td>
+                                <td>{teamScore.team}</td>
+                                <td>{teamScore.actualPosition}</td>
+                                <td className="font-semibold">{teamScore.score}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                )}
+              </React.Fragment>
+            );
+          })}
         </tbody>
         <tfoot>
           <tr>
@@ -95,7 +130,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
           </tr>
         </tfoot>
       </table>
-        <p>Updated: {formatTimestamp(timestamp)}</p>
+      <p>Updated: {formatTimestamp(timestamp)}</p>
     </div>
   );
 }
