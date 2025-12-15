@@ -1,0 +1,13 @@
+{
+    "username": "Jacqui",
+    "tieBreaker": 812,
+    "predictions": [
+        { "pos": 1, "team": "CHE" },
+        { "pos": 2, "team": "NEW" },
+        { "pos": 3, "team": "LIV" },
+        { "pos": 4, "team": "TOT" },
+        { "pos": 18, "team": "WHU" },
+        { "pos": 19, "team": "CRY" },
+        { "pos": 20, "team": "NFO" }
+    ]
+}
