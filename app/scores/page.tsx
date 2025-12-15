@@ -7,9 +7,9 @@ export default async function ScoresPage() {
   const data = scoresData as ScoresData;
 
   return (
-    <div className="min-h-screen bg-base-200 p-4">
+    <div className="min-h-screen bg-base-200 md:p-4">
       <div className="max-w-6xl mx-auto">
-        <div className="navbar bg-base-100 rounded-box shadow-md mb-6">
+        <div className="navbar bg-base-100 md:rounded-box shadow-md mb-6">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">Current Scores</h1>
           </div>
@@ -23,8 +23,8 @@ export default async function ScoresPage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 shadow-xl">
-          <div className="card-body">
+        <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box">
+          <div className="card-body p-2 md:p-4">
             {data.players.length === 0 ? (
               <div className="text-center py-8">
                 <p className="text-lg mb-4">No scores available yet.</p>

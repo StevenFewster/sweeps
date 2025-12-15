@@ -15,9 +15,9 @@ export default function TablePage() {
   const initialTotalGoals = leagueTableData.totalGoals || 0;
 
   return (
-    <div className="min-h-screen bg-base-200 p-4">
+    <div className="min-h-screen bg-base-200 md:p-4">
       <div className="max-w-6xl mx-auto">
-        <div className="navbar bg-base-100 rounded-box shadow-md mb-6">
+        <div className="navbar bg-base-100 md:rounded-box shadow-md mb-6">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">League Table Editor</h1>
           </div>

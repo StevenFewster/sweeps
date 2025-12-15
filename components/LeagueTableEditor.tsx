@@ -135,8 +135,8 @@ export default function LeagueTableEditor({
 
   return (
     <div className="space-y-6">
-      <div className="card bg-base-100 shadow-xl">
-        <div className="card-body">
+      <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box">
+        <div className="card-body p-2 md:p-4">
           <h2 className="card-title mb-4">League Table</h2>
           <p className="text-sm text-base-content/70 mb-4">
             Drag and drop teams to reorder the table. Top 4 are highlighted in green, bottom 3 in red.
@@ -177,7 +177,7 @@ export default function LeagueTableEditor({
         </div>
       </div>
 
-      <div className="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box">
         <div className="card-body">
           <h2 className="card-title mb-4">Season Stats</h2>
           
