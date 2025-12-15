@@ -17,38 +17,38 @@
     },
     {
       "position": 4,
-      "shortName": "CRY",
-      "name": "Crystal Palace"
-    },
-    {
-      "position": 5,
       "shortName": "CHE",
       "name": "Chelsea"
     },
     {
+      "position": 5,
+      "shortName": "CRY",
+      "name": "Crystal Palace"
+    },
+    {
       "position": 6,
+      "shortName": "LIV",
+      "name": "Liverpool"
+    },
+    {
+      "position": 7,
       "shortName": "MUN",
       "name": "Manchester United"
     },
     {
-      "position": 7,
-      "shortName": "EVE",
-      "name": "Everton"
-    },
-    {
       "position": 8,
-      "shortName": "BHA",
-      "name": "Brighton & Hove Albion"
-    },
-    {
-      "position": 9,
       "shortName": "SUN",
       "name": "Sunderland"
     },
     {
+      "position": 9,
+      "shortName": "EVE",
+      "name": "Everton"
+    },
+    {
       "position": 10,
-      "shortName": "LIV",
-      "name": "Liverpool"
+      "shortName": "BHA",
+      "name": "Brighton & Hove Albion"
     },
     {
       "position": 11,
@@ -62,8 +62,8 @@
     },
     {
       "position": 13,
-      "shortName": "BOU",
-      "name": "AFC Bournemouth"
+      "shortName": "FUL",
+      "name": "Fulham"
     },
     {
       "position": 14,
@@ -72,18 +72,18 @@
     },
     {
       "position": 15,
-      "shortName": "FUL",
-      "name": "Fulham"
+      "shortName": "BOU",
+      "name": "AFC Bournemouth"
     },
     {
       "position": 16,
-      "shortName": "LEE",
-      "name": "Leeds United"
+      "shortName": "NFO",
+      "name": "Nottingham Forest"
     },
     {
       "position": 17,
-      "shortName": "NFO",
-      "name": "Nottingham Forest"
+      "shortName": "LEE",
+      "name": "Leeds United"
     },
     {
       "position": 18,
@@ -101,8 +101,8 @@
       "name": "Wolverhampton Wanderers"
     }
   ],
-  "gamesPlayed": 15,
-  "totalGoals": 423,
-  "estimatedTotalGoals": 1072,
-  "timestamp": "2025-12-12T20:07:19.423Z"
+  "gamesPlayed": 16,
+  "totalGoals": 449,
+  "estimatedTotalGoals": 1066,
+  "timestamp": "2025-12-15T19:55:03.672Z"
 }
