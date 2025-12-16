@@ -20,7 +20,7 @@
         {
           "position": 3,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -57,7 +57,7 @@
         {
           "position": 1,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -99,55 +99,6 @@
       ]
     },
     {
-      "name": "Beard",
-      "totalScore": 16,
-      "tieBreaker": 1049,
-      "teamScores": [
-        {
-          "position": 1,
-          "team": "ARS",
-          "actualPosition": 1,
-          "score": 5
-        },
-        {
-          "position": 2,
-          "team": "LIV",
-          "actualPosition": 6,
-          "score": 0
-        },
-        {
-          "position": 3,
-          "team": "MCI",
-          "actualPosition": 2,
-          "score": 1
-        },
-        {
-          "position": 4,
-          "team": "CHE",
-          "actualPosition": 4,
-          "score": 5
-        },
-        {
-          "position": 18,
-          "team": "BRE",
-          "actualPosition": 14,
-          "score": 0
-        },
-        {
-          "position": 19,
-          "team": "BUR",
-          "actualPosition": 19,
-          "score": 5
-        },
-        {
-          "position": 20,
-          "team": "SUN",
-          "actualPosition": 8,
-          "score": 0
-        }
-      ]
-    },
-    {
       "name": "ColinM",
       "totalScore": 16,
       "tieBreaker": 1100,
@@ -167,7 +118,7 @@
         {
           "position": 3,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -185,7 +136,7 @@
         {
           "position": 19,
           "team": "BRE",
-          "actualPosition": 14,
+          "actualPosition": 15,
           "score": 0
         },
         {
@@ -197,6 +148,55 @@
       ]
     },
     {
+      "name": "Beard",
+      "totalScore": 16,
+      "tieBreaker": 1049,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 5
+        },
+        {
+          "position": 2,
+          "team": "LIV",
+          "actualPosition": 7,
+          "score": 0
+        },
+        {
+          "position": 3,
+          "team": "MCI",
+          "actualPosition": 2,
+          "score": 1
+        },
+        {
+          "position": 4,
+          "team": "CHE",
+          "actualPosition": 4,
+          "score": 5
+        },
+        {
+          "position": 18,
+          "team": "BRE",
+          "actualPosition": 15,
+          "score": 0
+        },
+        {
+          "position": 19,
+          "team": "BUR",
+          "actualPosition": 19,
+          "score": 5
+        },
+        {
+          "position": 20,
+          "team": "SUN",
+          "actualPosition": 8,
+          "score": 0
+        }
+      ]
+    },
+    {
       "name": "Warren",
       "totalScore": 16,
       "tieBreaker": 1140,
@@ -204,7 +204,7 @@
         {
           "position": 1,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -240,7 +240,7 @@
         {
           "position": 20,
           "team": "BRE",
-          "actualPosition": 14,
+          "actualPosition": 15,
           "score": 0
         }
       ]
@@ -253,7 +253,7 @@
         {
           "position": 1,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -332,14 +332,63 @@
         {
           "position": 19,
           "team": "MUN",
-          "actualPosition": 7,
+          "actualPosition": 6,
           "score": 0
         },
         {
           "position": 20,
           "team": "BOU",
-          "actualPosition": 15,
+          "actualPosition": 13,
           "score": 0
+        }
+      ]
+    },
+    {
+      "name": "Ian",
+      "totalScore": 9,
+      "tieBreaker": 1094,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 5
+        },
+        {
+          "position": 2,
+          "team": "LIV",
+          "actualPosition": 7,
+          "score": 0
+        },
+        {
+          "position": 3,
+          "team": "CHE",
+          "actualPosition": 4,
+          "score": 1
+        },
+        {
+          "position": 4,
+          "team": "MCI",
+          "actualPosition": 2,
+          "score": 1
+        },
+        {
+          "position": 18,
+          "team": "SUN",
+          "actualPosition": 8,
+          "score": 0
+        },
+        {
+          "position": 19,
+          "team": "WOL",
+          "actualPosition": 20,
+          "score": 1
+        },
+        {
+          "position": 20,
+          "team": "BUR",
+          "actualPosition": 19,
+          "score": 1
         }
       ]
     },
@@ -369,7 +418,7 @@
         {
           "position": 4,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -389,55 +438,6 @@
           "team": "SUN",
           "actualPosition": 8,
           "score": 0
-        }
-      ]
-    },
-    {
-      "name": "Ian",
-      "totalScore": 9,
-      "tieBreaker": 1094,
-      "teamScores": [
-        {
-          "position": 1,
-          "team": "ARS",
-          "actualPosition": 1,
-          "score": 5
-        },
-        {
-          "position": 2,
-          "team": "LIV",
-          "actualPosition": 6,
-          "score": 0
-        },
-        {
-          "position": 3,
-          "team": "CHE",
-          "actualPosition": 4,
-          "score": 1
-        },
-        {
-          "position": 4,
-          "team": "MCI",
-          "actualPosition": 2,
-          "score": 1
-        },
-        {
-          "position": 18,
-          "team": "SUN",
-          "actualPosition": 8,
-          "score": 0
-        },
-        {
-          "position": 19,
-          "team": "WOL",
-          "actualPosition": 20,
-          "score": 1
-        },
-        {
-          "position": 20,
-          "team": "BUR",
-          "actualPosition": 19,
-          "score": 1
         }
       ]
     },
@@ -449,7 +449,7 @@
         {
           "position": 1,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -473,7 +473,7 @@
         {
           "position": 18,
           "team": "BOU",
-          "actualPosition": 15,
+          "actualPosition": 13,
           "score": 0
         },
         {
@@ -510,7 +510,7 @@
         {
           "position": 3,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -540,14 +540,14 @@
       ]
     },
     {
-      "name": "Frank",
+      "name": "Colin2",
       "totalScore": 4,
-      "tieBreaker": 1019,
+      "tieBreaker": 1140,
       "teamScores": [
         {
           "position": 1,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -589,14 +589,14 @@
       ]
     },
     {
-      "name": "Colin2",
+      "name": "Frank",
       "totalScore": 4,
-      "tieBreaker": 1140,
+      "tieBreaker": 1019,
       "teamScores": [
         {
           "position": 1,
           "team": "LIV",
-          "actualPosition": 6,
+          "actualPosition": 7,
           "score": 0
         },
         {
@@ -638,6 +638,6 @@
       ]
     }
   ],
-  "estimatedTotalGoals": 1066,
-  "generatedAt": "2025-12-15T21:18:41.616Z"
+  "estimatedTotalGoals": 1085,
+  "generatedAt": "2025-12-16T14:37:53.501Z"
 }

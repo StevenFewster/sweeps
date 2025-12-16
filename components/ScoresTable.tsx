@@ -12,6 +12,21 @@ interface ScoresTableProps {
 export default function ScoresTable({ players, estimatedTotalGoals, timestamp }: ScoresTableProps) {
   const [expandedPlayer, setExpandedPlayer] = useState<string | null>(null);
   const [copiedPlayer, setCopiedPlayer] = useState<string | null>(null);
+  const [tooltipPlayer, setTooltipPlayer] = useState<string | null>(null);
+
+  // Close tooltip when clicking anywhere
+  React.useEffect(() => {
+    const handleClickOutside = () => {
+      if (tooltipPlayer) {
+        setTooltipPlayer(null);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [tooltipPlayer]);
 
   const togglePlayer = (playerName: string) => {
     setExpandedPlayer(expandedPlayer === playerName ? null : playerName);
@@ -73,7 +88,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
   };
 
   const getDotCount = (diff: number) => {
-    return Math.ceil(Math.abs(diff) / 10);
+    return Math.min(Math.ceil(Math.abs(diff) / 10), 12);
   };
 
   return (
@@ -107,12 +122,20 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                     <div className="flex items-center gap-4">
                       <span>{player.tieBreaker}</span>
                       {diff !== 0 && (
-                        <span 
-                          className={`${colorClass} cursor-help`}
-                          title={`${icon}${Math.abs(diff)}`}
+                        <div 
+                          className={`tooltip ${tooltipPlayer === player.name ? 'tooltip-open' : ''} tooltip-left`}
+                          data-tip={`${icon}${Math.abs(diff)} from estimated total goals: ${estimatedTotalGoals}`}
                         >
-                          {'●'.repeat(dotCount)}
-                        </span>
+                          <span 
+                            className={`${colorClass} cursor-pointer`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setTooltipPlayer(tooltipPlayer === player.name ? null : player.name);
+                            }}
+                          >
+                            {'▌'.repeat(dotCount)}
+                          </span>
+                        </div>
                       )}
                     </div>
                   </td>
