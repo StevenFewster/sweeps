@@ -17,13 +17,13 @@
     },
     {
       "position": 4,
-      "shortName": "CHE",
-      "name": "Chelsea"
+      "shortName": "LIV",
+      "name": "Liverpool"
     },
     {
       "position": 5,
-      "shortName": "CRY",
-      "name": "Crystal Palace"
+      "shortName": "CHE",
+      "name": "Chelsea"
     },
     {
       "position": 6,
@@ -32,8 +32,8 @@
     },
     {
       "position": 7,
-      "shortName": "LIV",
-      "name": "Liverpool"
+      "shortName": "BRE",
+      "name": "Brentford"
     },
     {
       "position": 8,
@@ -42,8 +42,8 @@
     },
     {
       "position": 9,
-      "shortName": "EVE",
-      "name": "Everton"
+      "shortName": "NEW",
+      "name": "Newcastle United"
     },
     {
       "position": 10,
@@ -52,38 +52,38 @@
     },
     {
       "position": 11,
-      "shortName": "TOT",
-      "name": "Tottenham Hotspur"
-    },
-    {
-      "position": 12,
-      "shortName": "NEW",
-      "name": "Newcastle United"
-    },
-    {
-      "position": 13,
-      "shortName": "BOU",
-      "name": "AFC Bournemouth"
-    },
-    {
-      "position": 14,
       "shortName": "FUL",
       "name": "Fulham"
     },
     {
+      "position": 12,
+      "shortName": "EVE",
+      "name": "Everton"
+    },
+    {
+      "position": 13,
+      "shortName": "TOT",
+      "name": "Tottenham Hotspur"
+    },
+    {
+      "position": 14,
+      "shortName": "CRY",
+      "name": "Crystal Palace"
+    },
+    {
       "position": 15,
-      "shortName": "BRE",
-      "name": "Brenford"
+      "shortName": "BOU",
+      "name": "AFC Bournemouth"
     },
     {
       "position": 16,
-      "shortName": "NFO",
-      "name": "Nottingham Forest"
+      "shortName": "LEE",
+      "name": "Leeds United"
     },
     {
       "position": 17,
-      "shortName": "LEE",
-      "name": "Leeds United"
+      "shortName": "NFO",
+      "name": "Nottingham Forest"
     },
     {
       "position": 18,
@@ -101,8 +101,8 @@
       "name": "Wolverhampton Wanderers"
     }
   ],
-  "gamesPlayed": 16,
-  "totalGoals": 457,
-  "estimatedTotalGoals": 1085,
-  "timestamp": "2025-12-16T14:37:00.635Z"
+  "gamesPlayed": 20,
+  "totalGoals": 558,
+  "estimatedTotalGoals": 1060,
+  "timestamp": "2026-01-05T12:50:15.612Z"
 }
