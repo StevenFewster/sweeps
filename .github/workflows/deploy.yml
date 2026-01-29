@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 2 * * 0'  # 2am on Sunday
+    - cron: '0 2 * * 1'  # 2am on Monday
+    - cron: '0 2 * * 2'  # 2am on Tuesday
   workflow_dispatch:
 
 permissions:
@@ -32,7 +36,7 @@ jobs:
         run: npm ci
         
       - name: Generate scores
-        run: npm run generate-scores
+        run: npm run update
         
       - name: Build with Next.js
         run: npm run build
