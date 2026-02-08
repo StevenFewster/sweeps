@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200">
-      <div className="card bg-base-100 shadow-xl max-w-md">
+      <div className="card  max-w-md">
         <div className="card-body items-center text-center">
           <h1 className="card-title text-4xl font-bold mb-4">
             Welcome to the PL Sweepstake 2025/26

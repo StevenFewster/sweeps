@@ -19,7 +19,7 @@ export default function TablePage() {
       <div className="max-w-6xl mx-auto">
         <div className="navbar bg-base-100 md:rounded-box shadow-md mb-6">
           <div className="flex-1">
-            <h1 className="text-2xl font-bold">League Table Editor</h1>
+            <h1 className="text-2xl font-bold pl-4">League Table Editor</h1>
           </div>
           <div className="flex-none">
             <Link href="/" className="btn btn-ghost">

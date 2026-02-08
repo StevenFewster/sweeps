@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { PlayerScore } from '@/lib/types';
+import StarIcon from './StarIcon';
 
 interface ScoresTableProps {
   players: PlayerScore[];
@@ -93,6 +94,12 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
 
   return (
     <div className="overflow-x-auto">
+
+      <div className="flex mb-4">
+        <p className="grow">Current estimated Total Goals: <strong>{estimatedTotalGoals}</strong></p>
+        <p className='flex-none'>Last update: {formatTimestamp(timestamp)}</p>
+      </div>
+
       <table className="table table-zebra w-full">
         <thead>
           <tr>
@@ -113,21 +120,21 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
               <React.Fragment key={`${player.name}-${index}`}>
                 <tr
                   onClick={() => togglePlayer(player.name)}
-                  className="cursor-pointer"
+                  className={`cursor-pointer ${expandedPlayer === player.name ? 'selected' : ''}`}
                 >
                   <td>{index + 1}</td>
                   <td className="font-semibold">{player.name}</td>
                   <td>{player.totalScore}</td>
                   <td>
                     <div className="flex items-center gap-4">
-                      <span>{player.tieBreaker}</span>
+                      <span className='tie-breaker'>{player.tieBreaker}</span>
                       {diff !== 0 && (
                         <div 
                           className={`tooltip ${tooltipPlayer === player.name ? 'tooltip-open' : ''} tooltip-left`}
                           data-tip={`${icon}${Math.abs(diff)} from estimated total goals: ${estimatedTotalGoals}`}
                         >
                           <span 
-                            className={`${colorClass} cursor-pointer`}
+                            className={`${colorClass} cursor-pointer diff-indicator`}
                             onClick={(e) => {
                               e.stopPropagation();
                               setTooltipPlayer(tooltipPlayer === player.name ? null : player.name);
@@ -141,24 +148,27 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                   </td>
                 </tr>
                 {expandedPlayer === player.name && (
-                  <tr>
+                  <tr className="border-4 border-teal-800">
                     <td colSpan={4} className="bg-base-200 p-0">
                       <div className="p-4">
                         <table className="table table-sm w-full">
                           <thead>
                             <tr>
                               <th>Pos</th>
-                              <th>Team</th>
                               <th>Actual</th>
-                              <th>Score</th>
+                              <th>Team</th>
+                              <th width={80}>Score</th>
                             </tr>
                           </thead>
                           <tbody>
                             {player.teamScores.map((teamScore) => (
                               <tr key={`${player.name}-${teamScore.team}`} className={`row-color-${teamScore.score}`}>
-                                <td>{teamScore.position}</td>
-                                <td>{teamScore.team}</td>
+                                <td><span className='pos-indicator'>{teamScore.position}</span></td>
                                 <td>{teamScore.actualPosition}</td>
+                                <td>
+                                   <span className="icon-indicator"><StarIcon className="w-4 h-4 inline-block align-top" /></span>
+                                   {teamScore.team}
+                                  </td>
                                 <td className="font-semibold">{teamScore.score}</td>
                               </tr>
                             ))}
@@ -190,16 +200,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
             );
           })}
         </tbody>
-        <tfoot>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td className="font-bold">{estimatedTotalGoals}</td>
-          </tr>
-        </tfoot>
       </table>
-      <p>Updated: {formatTimestamp(timestamp)}</p>
     </div>
   );
 }

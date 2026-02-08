@@ -3,18 +3,32 @@
 @tailwind utilities;
 
 
-.table tr.active.row-color-1,
-.table tr.active:nth-child(even).row-color-1,
-.table-zebra tbody tr.row-color-1 {
-  @apply bg-blue-400 text-black;
-}
-
-.table tr.active.row-color-5,
-.table tr.active:nth-child(even).row-color-5,
-.table-zebra tbody tr.row-color-5 {
-  @apply bg-yellow-400 text-black;
-}
-
 .table-zebra>tbody>tr:hover {
-  @apply bg-secondary;
+  @apply bg-base-200;
+}
+.table-zebra>tbody>tr.selected:hover,
+.table-zebra>tbody>tr.selected {
+  @apply bg-teal-800 border-4 border-teal-800;
+}
+span.tie-breaker {
+    min-width: 35px;
+}
+span.diff-indicator {
+    letter-spacing: -0.3rem;
+}
+span.pos-indicator {
+  display: inline-block;
+    min-width: 35px;
+}
+span.icon-indicator {
+  color: transparent;
+  display: inline-block;
+  min-width: 25px;
+  vertical-align: text-top;
+} 
+.row-color-1 span.icon-indicator {
+  @apply text-blue-400;
+}
+.row-color-5 span.icon-indicator {
+  @apply text-yellow-400;
 }
