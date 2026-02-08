@@ -157,7 +157,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                               <th>Pos</th>
                               <th>Actual</th>
                               <th>Team</th>
-                              <th width={80}>Score</th>
+                              <th className="w-auto md:w-1/3">Score</th>
                             </tr>
                           </thead>
                           <tbody>
