@@ -14,7 +14,7 @@ span.tie-breaker {
     min-width: 35px;
 }
 span.diff-indicator {
-    letter-spacing: -0.3rem;
+    letter-spacing: -0.2rem;
 }
 span.pos-indicator {
   display: inline-block;
