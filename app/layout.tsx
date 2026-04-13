@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PL Sweepstake 2025/26",
-  description: "Premier League prediction sweepstake tracker",
+  title: "Sweepstake Pages",
+  description: "Sports prediction sweepstake tracker",
 };
 
 export default function RootLayout({
