@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import LeagueCookieSync from "@/components/LeagueCookieSync";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,6 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dracula">
       <body className="antialiased">
+        <Suspense fallback={null}>
+          <LeagueCookieSync />
+        </Suspense>
         {children}
       </body>
     </html>

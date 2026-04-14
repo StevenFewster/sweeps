@@ -1,7 +1,9 @@
-import Link from 'next/link';
-import ScoresTable from '@/components/ScoresTable';
-import { ScoresData } from '@/lib/types';
-import scoresData from '@/public/scores.json';
+import Link from "next/link";
+import ScoresTable from "@/components/ScoresTable";
+import { ScoresData } from "@/lib/types";
+import scoresData from "@/public/scores.json";
+import PageNav from "@/components/PageNav";
+import { PL2026_NAV_ITEMS } from "@/lib/constants";
 
 export default async function ScoresPage() {
   const data = scoresData as ScoresData;
@@ -9,19 +11,7 @@ export default async function ScoresPage() {
   return (
     <div className="min-h-screen bg-base-200 md:p-4">
       <div className="max-w-6xl mx-auto">
-        <div className="navbar bg-base-100 md:rounded-box shadow-md mb-6">
-          <div className="flex-1">
-            <h1 className="text-2xl font-bold pl-4">Current Scores</h1>
-          </div>
-          <div className="flex-none">
-            <Link href="/" className="btn btn-ghost">
-              Home
-            </Link>
-            <Link href="/pl-2026/table" className="btn btn-ghost">
-              Edit Table
-            </Link>
-          </div>
-        </div>
+        <PageNav navItems={PL2026_NAV_ITEMS}>Current Scores</PageNav>
 
         <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box">
           <div className="card-body p-2 md:p-4">

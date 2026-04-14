@@ -1,7 +1,9 @@
-import Link from 'next/link';
-import LeagueTableEditor from '@/components/LeagueTableEditor';
-import { Team } from '@/lib/types';
-import leagueTableData from '@/public/league-table.json';
+import Link from "next/link";
+import LeagueTableEditor from "@/components/LeagueTableEditor";
+import { Team } from "@/lib/types";
+import leagueTableData from "@/public/league-table.json";
+import PageNav from "@/components/PageNav";
+import { PL2026_NAV_ITEMS } from "@/lib/constants";
 
 export default function TablePage() {
   // Load teams from league-table.json if available, otherwise use default teams
@@ -17,19 +19,7 @@ export default function TablePage() {
   return (
     <div className="min-h-screen bg-base-200 md:p-4">
       <div className="max-w-6xl mx-auto">
-        <div className="navbar bg-base-100 md:rounded-box shadow-md mb-6">
-          <div className="flex-1">
-            <h1 className="text-2xl font-bold pl-4">League Table Editor</h1>
-          </div>
-          <div className="flex-none">
-            <Link href="/" className="btn btn-ghost">
-              Home
-            </Link>
-            <Link href="/pl-2026/scores" className="btn btn-ghost">
-              Scores
-            </Link>
-          </div>
-        </div>
+        <PageNav navItems={PL2026_NAV_ITEMS}>League Table Editor</PageNav>
 
         <LeagueTableEditor
           initialTeams={initialTeams}

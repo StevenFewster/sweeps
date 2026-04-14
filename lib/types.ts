@@ -44,3 +44,8 @@ export interface ScoresData {
   estimatedTotalGoals: number;
   generatedAt: string;
 }
+
+export type NavItem = {
+  path: string;
+  text: string;
+};

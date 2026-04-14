@@ -11,6 +11,7 @@
     "test:watch": "jest --watch",
     "generate-scores": "tsx scripts/generate-scores.ts",
     "update-league-table": "tsx scripts/update-league-table.ts",
+    "update-wc-table": "tsx scripts/update-wc-table.ts",
     "update": "npm run update-league-table && npm run generate-scores"
   },
   "dependencies": {
