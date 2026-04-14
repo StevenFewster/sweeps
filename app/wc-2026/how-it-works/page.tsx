@@ -37,7 +37,7 @@ function SectionHeading({
 export default function HowItWorksPage() {
   return (
     <div className="min-h-screen bg-base-200 md:p-4">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <PageNav navItems={WC2026_NAV_ITEMS}>How It Works</PageNav>
 
         <EnterButton />

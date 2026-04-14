@@ -4,59 +4,74 @@ import PageNav from "@/components/PageNav";
 import { WC2026_NAV_ITEMS } from "@/lib/constants";
 import { useEffect, useState } from "react";
 import wcTableData from "@/public/wc-table.json";
+import emailjs from "@emailjs/browser";
+
 
 const STEPS = ["Details", "Group Stage", "The Finals"];
-const GROUP_LETTERS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"];
+const GROUP_LETTERS = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+];
 
 const FLAGS: Record<string, string> = {
-  "Mexico": "🇲🇽",
+  Mexico: "🇲🇽",
   "South Africa": "🇿🇦",
   "South Korea": "🇰🇷",
   "Czech Republic": "🇨🇿",
-  "Canada": "🇨🇦",
+  Canada: "🇨🇦",
   "Bosnia-Herzegovina": "🇧🇦",
-  "Qatar": "🇶🇦",
-  "Switzerland": "🇨🇭",
-  "Brazil": "🇧🇷",
-  "Morocco": "🇲🇦",
-  "Haiti": "🇭🇹",
-  "Scotland": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  Qatar: "🇶🇦",
+  Switzerland: "🇨🇭",
+  Brazil: "🇧🇷",
+  Morocco: "🇲🇦",
+  Haiti: "🇭🇹",
+  Scotland: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
   "United States": "🇺🇸",
-  "Paraguay": "🇵🇾",
-  "Australia": "🇦🇺",
-  "Turkey": "🇹🇷",
-  "Germany": "🇩🇪",
-  "Curaçao": "🇨🇼",
+  Paraguay: "🇵🇾",
+  Australia: "🇦🇺",
+  Turkey: "🇹🇷",
+  Germany: "🇩🇪",
+  Curaçao: "🇨🇼",
   "Ivory Coast": "🇨🇮",
-  "Ecuador": "🇪🇨",
-  "Netherlands": "🇳🇱",
-  "Japan": "🇯🇵",
-  "Sweden": "🇸🇪",
-  "Tunisia": "🇹🇳",
-  "Belgium": "🇧🇪",
-  "Egypt": "🇪🇬",
-  "Iran": "🇮🇷",
+  Ecuador: "🇪🇨",
+  Netherlands: "🇳🇱",
+  Japan: "🇯🇵",
+  Sweden: "🇸🇪",
+  Tunisia: "🇹🇳",
+  Belgium: "🇧🇪",
+  Egypt: "🇪🇬",
+  Iran: "🇮🇷",
   "New Zealand": "🇳🇿",
-  "Spain": "🇪🇸",
+  Spain: "🇪🇸",
   "Cape Verde": "🇨🇻",
   "Saudi Arabia": "🇸🇦",
-  "Uruguay": "🇺🇾",
-  "France": "🇫🇷",
-  "Senegal": "🇸🇳",
-  "Iraq": "🇮🇶",
-  "Norway": "🇳🇴",
-  "Argentina": "🇦🇷",
-  "Algeria": "🇩🇿",
-  "Austria": "🇦🇹",
-  "Jordan": "🇯🇴",
-  "Portugal": "🇵🇹",
+  Uruguay: "🇺🇾",
+  France: "🇫🇷",
+  Senegal: "🇸🇳",
+  Iraq: "🇮🇶",
+  Norway: "🇳🇴",
+  Argentina: "🇦🇷",
+  Algeria: "🇩🇿",
+  Austria: "🇦🇹",
+  Jordan: "🇯🇴",
+  Portugal: "🇵🇹",
   "Congo DR": "🇨🇩",
-  "Uzbekistan": "🇺🇿",
-  "Colombia": "🇨🇴",
-  "England": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-  "Croatia": "🇭🇷",
-  "Ghana": "🇬🇭",
-  "Panama": "🇵🇦",
+  Uzbekistan: "🇺🇿",
+  Colombia: "🇨🇴",
+  England: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  Croatia: "🇭🇷",
+  Ghana: "🇬🇭",
+  Panama: "🇵🇦",
 };
 
 // Group countries by letter, preserving JSON order (groupPosition 1–4)
@@ -70,7 +85,7 @@ const GROUPS_BY_LETTER = wcTableData.countries.reduce<
 
 // All 48 countries sorted alphabetically for the finals dropdowns
 const ALL_COUNTRIES = [...wcTableData.countries].sort((a, b) =>
-  a.name.localeCompare(b.name)
+  a.name.localeCompare(b.name),
 );
 
 // ── Types ────────────────────────────────────────────────────────────────────
@@ -89,6 +104,7 @@ interface FormData {
   tieBreak: string;
   groupPredictions: Record<string, string>;
   finalsPredictions: FinalsPredictions;
+  message?: string;
 }
 
 const INITIAL_FORM_DATA: FormData = {
@@ -134,12 +150,10 @@ function CountryDropdown({
         <div
           tabIndex={0}
           role="button"
-          className={`btn btn-outline w-full justify-between font-normal ${hasError ? "btn-error" : ""}`}
+          className={`btn w-full justify-between font-normal border bg-base-100 hover:bg-base-200 hover:border-base-300 ${hasError ? "border-error text-error hover:border-error hover:text-error hover:bg-base-100" : "border-base-300 text-base-content"}`}
         >
           <span className={selected ? "" : "text-base-content/40"}>
-            {selected
-              ? `${FLAGS[selected] ?? "🏳️"} ${selected}`
-              : placeholder}
+            {selected ? `${FLAGS[selected] ?? "🏳️"} ${selected}` : placeholder}
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +163,11 @@ function CountryDropdown({
             stroke="currentColor"
             strokeWidth={2}
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
           </svg>
         </div>
         <ul
@@ -238,8 +256,8 @@ function StepDetails({
           </span>
         </label>
         <p className="text-sm text-base-content/60 mb-2">
-          Add up the minute of every goal scored in the final. e.g. goals in
-          the 6th, 19th, and 89th minute = <strong>114</strong>.
+          Add up the minute of every goal scored in the final. e.g. goals in the
+          6th, 19th, and 89th minute = <strong>114</strong>.
         </p>
         <input
           id="tieBreak"
@@ -294,7 +312,7 @@ function StepFinals({
 }) {
   const selectedValues = Object.values(predictions).filter(Boolean);
   const duplicates = selectedValues.filter(
-    (v, i) => selectedValues.indexOf(v) !== i
+    (v, i) => selectedValues.indexOf(v) !== i,
   );
 
   return (
@@ -313,7 +331,6 @@ function StepFinals({
     </div>
   );
 }
-
 
 // ── Validation ────────────────────────────────────────────────────────────────
 
@@ -376,13 +393,32 @@ export default function SubmitEntryPage() {
   }
 
   function handleSubmit() {
-    // TODO: submit entry
-    console.log("Submitting entry:", formData);
+    emailjs
+      .send(
+        "service_vmm195j",
+        "template_sgb3sna",
+        {
+          name: formData.name,
+          message: JSON.stringify(formData),
+        },
+        { publicKey: "R0NA0abzOhyKQ6hRF" },
+      )
+      .then(
+        () => {
+          alert(
+            "Your entry has been submitted successfully. If you have any changes, please contact Steven Fewster directly.",
+          );
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Failed to submit entry. Please contact Steven Fewster");
+        },
+      );
   }
 
   return (
     <div className="min-h-screen bg-base-200 md:p-4">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <PageNav navItems={WC2026_NAV_ITEMS}>Enter Competition</PageNav>
 
         <ul className="steps w-full mb-6 px-2">
@@ -446,6 +482,7 @@ export default function SubmitEntryPage() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }
