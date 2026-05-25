@@ -26,7 +26,7 @@ export default function Home() {
           >
             PL Sweepstake 2026/27
           </Link>
-          <div class="divider text-xs text-base-content/40 uppercase tracking-widest my-2">
+          <div className="divider text-xs text-base-content/40 uppercase tracking-widest my-2">
             Archive
           </div>
           <Link
