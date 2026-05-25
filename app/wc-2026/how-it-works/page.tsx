@@ -97,33 +97,6 @@ export default function HowItWorksPage() {
               </table>
             </div>
 
-            <div className="border-2 border-dashed border-base-content/20 rounded-box p-8 flex flex-col items-center justify-center gap-2 text-base-content/40">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={1}
-              >
-                <rect
-                  x="3"
-                  y="3"
-                  width="18"
-                  height="18"
-                  rx="2"
-                  strokeLinejoin="round"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 9h18M9 21V9"
-                />
-              </svg>
-              <p className="text-sm font-medium">
-                Example screenshot coming soon
-              </p>
-            </div>
           </div>
         </div>
 
