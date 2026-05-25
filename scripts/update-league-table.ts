@@ -222,12 +222,7 @@ async function updateLeagueTable() {
     };
 
     // Save to file
-    const outputPath = path.join(
-      process.cwd(),
-      "public",
-      "pl-26-27",
-      "league-table.json",
-    );
+    const outputPath = path.join(process.cwd(), "public", "league-table.json");
     fs.writeFileSync(outputPath, JSON.stringify(leagueTable, null, 2));
 
     console.log(`\nLeague table updated successfully!`);
