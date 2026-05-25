@@ -87,22 +87,22 @@
     },
     {
       "position": 18,
-      "shortName": "WHU",
-      "name": "West Ham United"
+      "shortName": "COV",
+      "name": "Coventry City"
     },
     {
       "position": 19,
-      "shortName": "BUR",
-      "name": "Burnley"
+      "shortName": "IPS",
+      "name": "Ipswich Town"
     },
     {
       "position": 20,
-      "shortName": "WOL",
-      "name": "Wolverhampton Wanderers"
+      "shortName": "HUL",
+      "name": "Hull City"
     }
   ],
-  "gamesPlayed": 38,
-  "totalGoals": 1045,
+  "gamesPlayed": 0,
+  "totalGoals": 0,
   "estimatedTotalGoals": 1045,
-  "timestamp": "2026-05-25T13:07:58.193Z"
+  "timestamp": "2026-05-25T13:08:44.596Z"
 }

@@ -5,18 +5,21 @@
  * Usage: npm run generate-scores
  */
 
-import * as fs from 'fs';
-import * as path from 'path';
-import { fileURLToPath } from 'url';
-import { calculatePlayerScores } from '../lib/scoring.js';
+import * as fs from "fs";
+import * as path from "path";
+import { fileURLToPath } from "url";
+import { calculatePlayerScores } from "../lib/scoring.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Paths
-const LEAGUE_TABLE_PATH = path.join(__dirname, '../public/league-table.json');
-const ENTRIES_DIR = path.join(__dirname, '../resources/entries');
-const OUTPUT_PATH = path.join(__dirname, '../public/scores.json');
+const LEAGUE_TABLE_PATH = path.join(
+  __dirname,
+  "../public/pl-26-27/league-table.json",
+);
+const ENTRIES_DIR = path.join(__dirname, "../resources/entries/pl-26-27");
+const OUTPUT_PATH = path.join(__dirname, "../public/pl-26-27/scores.json");
 
 interface LeagueTableJSON {
   teams: Array<{
@@ -41,32 +44,34 @@ interface EntryJSON {
 
 function loadLeagueTable(): LeagueTableJSON {
   try {
-    const data = fs.readFileSync(LEAGUE_TABLE_PATH, 'utf-8');
+    const data = fs.readFileSync(LEAGUE_TABLE_PATH, "utf-8");
     return JSON.parse(data);
   } catch (error) {
-    console.error('Error loading league table:', error);
-    throw new Error('Failed to load league-table.json. Please create it first by using the Table Editor.');
+    console.error("Error loading league table:", error);
+    throw new Error(
+      "Failed to load league-table.json. Please create it first by using the Table Editor.",
+    );
   }
 }
 
 function loadEntries(): EntryJSON[] {
   try {
     const files = fs.readdirSync(ENTRIES_DIR);
-    const jsonFiles = files.filter((file) => file.endsWith('.json'));
+    const jsonFiles = files.filter((file) => file.endsWith(".json"));
 
     return jsonFiles.map((file) => {
       const filePath = path.join(ENTRIES_DIR, file);
-      const data = fs.readFileSync(filePath, 'utf-8');
+      const data = fs.readFileSync(filePath, "utf-8");
       return JSON.parse(data);
     });
   } catch (error) {
-    console.error('Error loading entries:', error);
-    throw new Error('Failed to load entries from resources/entries directory.');
+    console.error("Error loading entries:", error);
+    throw new Error("Failed to load entries from resources/entries directory.");
   }
 }
 
 function main() {
-  console.log('Generating scores...\n');
+  console.log("Generating scores...\n");
 
   // Load data
   const leagueTableData = loadLeagueTable();
@@ -84,6 +89,7 @@ function main() {
     timestamp: leagueTableData.timestamp,
   };
 
+  console.log(JSON.stringify(entriesData, null, 2));
   const entries = entriesData.map((entry) => ({
     name: entry.username,
     tieBreaker: entry.tieBreaker,
@@ -104,7 +110,7 @@ function main() {
   };
 
   // Ensure public directory exists
-  const publicDir = path.join(__dirname, '../public');
+  const publicDir = path.join(__dirname, "../public");
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
   }
@@ -112,13 +118,15 @@ function main() {
   // Write output
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(scoresData, null, 2));
 
-  console.log('✓ Scores generated successfully!');
+  console.log("✓ Scores generated successfully!");
   console.log(`✓ Output saved to: ${OUTPUT_PATH}\n`);
 
   // Display summary
-  console.log('Score Summary:');
+  console.log("Score Summary:");
   playerScores.forEach((player, index) => {
-    console.log(`${index + 1}. ${player.name}: ${player.totalScore} points (TB: ${player.tieBreaker})`);
+    console.log(
+      `${index + 1}. ${player.name}: ${player.totalScore} points (TB: ${player.tieBreaker})`,
+    );
   });
 }
 
@@ -126,6 +134,6 @@ function main() {
 try {
   main();
 } catch (error) {
-  console.error('Error:', error instanceof Error ? error.message : error);
+  console.error("Error:", error instanceof Error ? error.message : error);
   process.exit(1);
 }

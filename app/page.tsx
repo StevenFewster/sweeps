@@ -13,11 +13,26 @@ export default function Home() {
           </p>
           <div className="indicator w-full">
             <span className="indicator-item badge badge-warning">New</span>
-            <Link href="/wc-2026/how-it-works" className="btn btn-primary btn-outline w-full">
+            <Link
+              href="/wc-2026/how-it-works"
+              className="btn btn-primary btn-outline w-full"
+            >
               World Cup 2026
             </Link>
           </div>
-          <Link href="/pl-2026/scores" className="btn btn-primary btn-outline w-full mt-4">
+          <Link
+            href="/pl-26-27/submit-entry"
+            className="btn btn-primary btn-outline w-full mt-4"
+          >
+            PL Sweepstake 2026/27
+          </Link>
+          <div class="divider text-xs text-base-content/40 uppercase tracking-widest my-2">
+            Archive
+          </div>
+          <Link
+            href="/pl-2026/scores"
+            className="btn btn-tertiary btn-outline w-full mt-4"
+          >
             PL Sweepstake 2025/26
           </Link>
         </div>
@@ -25,4 +40,3 @@ export default function Home() {
     </div>
   );
 }
-

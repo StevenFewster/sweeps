@@ -212,34 +212,30 @@ export default function HowItWorksPage() {
         <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box mb-4">
           <div className="card-body p-6">
             <SectionHeading
-              icon="⏱️"
+              icon="🟨"
               title="Tie Breaker"
               subtitle="Used only if two entrants finish level on points"
             />
 
             <p className="mb-4">
-              Predict the <strong>sum of all goal minutes</strong> scored in the
-              World Cup Final. The entrant whose prediction is closest to the
-              actual total wins the tie.
+              Predict the <strong>total number of yellow cards</strong> issued
+              across the entire tournament. The entrant whose prediction is
+              closest to the actual total wins the tie.
             </p>
 
             <div className="bg-base-200 rounded-box p-4">
               <p className="text-sm font-semibold text-base-content/70 uppercase tracking-widest mb-3">
-                Example
+                Context
               </p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                <span className="badge badge-outline">
-                  Argentina ⚽ 6&apos;
-                </span>
-                <span className="badge badge-outline">
-                  Argentina ⚽ 19&apos;
-                </span>
-                <span className="badge badge-outline">Brazil ⚽ 89&apos;</span>
-              </div>
-              <p className="text-sm text-base-content/70">
-                6 + 19 + 89 ={" "}
-                <strong className="text-base-content text-lg">114</strong>
-              </p>
+              <ul className="text-sm text-base-content/70 space-y-1">
+                <li>
+                  🏆 The record was set at the <strong>2006 World Cup</strong>{" "}
+                  — <strong className="text-base-content">345 yellow cards</strong> across 64 matches
+                </li>
+                <li>
+                  📅 This World Cup features <strong className="text-base-content">104 matches</strong>, the most in history
+                </li>
+              </ul>
             </div>
           </div>
         </div>

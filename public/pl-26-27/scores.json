@@ -1,0 +1,55 @@
+{
+  "players": [
+    {
+      "name": "DEFAULT",
+      "totalScore": 35,
+      "tieBreaker": 1045,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 5
+        },
+        {
+          "position": 2,
+          "team": "MCI",
+          "actualPosition": 2,
+          "score": 5
+        },
+        {
+          "position": 3,
+          "team": "MUN",
+          "actualPosition": 3,
+          "score": 5
+        },
+        {
+          "position": 4,
+          "team": "AVL",
+          "actualPosition": 4,
+          "score": 5
+        },
+        {
+          "position": 18,
+          "team": "COV",
+          "actualPosition": 18,
+          "score": 5
+        },
+        {
+          "position": 19,
+          "team": "IPS",
+          "actualPosition": 19,
+          "score": 5
+        },
+        {
+          "position": 20,
+          "team": "HUL",
+          "actualPosition": 20,
+          "score": 5
+        }
+      ]
+    }
+  ],
+  "estimatedTotalGoals": 1045,
+  "generatedAt": "2026-05-25T13:30:57.917Z"
+}

@@ -252,18 +252,18 @@ function StepDetails({
       <div className="form-control">
         <label className="label" htmlFor="tieBreak">
           <span className="label-text font-semibold">
-            Tie Break — Total goal minutes in the World Cup Final
+            Tie Break — Total yellow cards across the tournament
           </span>
         </label>
         <p className="text-sm text-base-content/60 mb-2">
-          Add up the minute of every goal scored in the final. e.g. goals in the
-          6th, 19th, and 89th minute = <strong>114</strong>.
+          Predict how many yellow cards will be issued across all 104 matches.
+          The record is <strong>345</strong> set at the 2006 World Cup (64 matches).
         </p>
         <input
           id="tieBreak"
           type="number"
           min={0}
-          placeholder="e.g. 114"
+          placeholder="e.g. 345"
           className="input input-bordered w-full max-w-xs"
           value={data.tieBreak}
           onChange={(e) => onChange({ tieBreak: e.target.value })}

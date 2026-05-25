@@ -5,6 +5,12 @@ export const PL2026_NAV_ITEMS: NavItem[] = [
   { path: "/pl-2026/table", text: "Edit Table" },
 ];
 
+export const PL2027_NAV_ITEMS: NavItem[] = [
+  { path: "/pl-26-27/submit-entry", text: "Enter Competition" },
+  { path: "/pl-26-27/scores", text: "Scores" },
+  { path: "/pl-26-27/table", text: "Edit Table" },
+];
+
 export const WC2026_NAV_ITEMS: NavItem[] = [
   { path: "/wc-2026/how-it-works", text: "How It Works" },
   { path: "/wc-2026/submit-entry", text: "Enter Competition" },
