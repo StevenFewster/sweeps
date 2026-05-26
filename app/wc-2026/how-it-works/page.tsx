@@ -77,7 +77,7 @@ export default function HowItWorksPage() {
                   </tr>
                   <tr>
                     <td>
-                      Your pick <strong>qualifies for the Last 16</strong> (but
+                      Your pick <strong>qualifies for the Last 32</strong> (but
                       didn&apos;t win the group)
                     </td>
                     <td className="text-right">
@@ -96,7 +96,6 @@ export default function HowItWorksPage() {
                 </tbody>
               </table>
             </div>
-
           </div>
         </div>
 
@@ -202,11 +201,16 @@ export default function HowItWorksPage() {
               </p>
               <ul className="text-sm text-base-content/70 space-y-1">
                 <li>
-                  🏆 The record was set at the <strong>2006 World Cup</strong>{" "}
-                  — <strong className="text-base-content">345 yellow cards</strong> across 64 matches
+                  🏆 The record was set at the <strong>2006 World Cup</strong> —{" "}
+                  <strong className="text-base-content">
+                    345 yellow cards
+                  </strong>{" "}
+                  across 64 matches
                 </li>
                 <li>
-                  📅 This World Cup features <strong className="text-base-content">104 matches</strong>, the most in history
+                  📅 This World Cup features{" "}
+                  <strong className="text-base-content">104 matches</strong>,
+                  the most in history
                 </li>
               </ul>
             </div>
