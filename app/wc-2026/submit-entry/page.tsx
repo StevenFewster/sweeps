@@ -3,6 +3,7 @@
 import PageNav from "@/components/PageNav";
 import { WC2026_NAV_ITEMS } from "@/lib/constants";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import wcTableData from "@/public/wc-table.json";
 import emailjs from "@emailjs/browser";
 
@@ -357,6 +358,7 @@ function isStepValid(step: number, data: FormData): boolean {
 // ── Page ──────────────────────────────────────────────────────────────────────
 
 export default function SubmitEntryPage() {
+  const router = useRouter();
   const [step, setStep] = useState(0);
   const [formData, setFormData] = useState<FormData>(INITIAL_FORM_DATA);
 
@@ -408,6 +410,7 @@ export default function SubmitEntryPage() {
           alert(
             "Your entry has been submitted successfully. If you have any changes, please contact Steven Fewster directly.",
           );
+          router.push("/");
         },
         (error) => {
           console.error("FAILED...", error);

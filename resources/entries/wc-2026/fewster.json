@@ -1,0 +1,26 @@
+{
+  "name": "Steven Fewster",
+  "displayName": "Fewster",
+  "league": "TRINITY",
+  "tieBreak": "423",
+  "groupPredictions": {
+    "A": "Mexico",
+    "B": "Switzerland",
+    "C": "Brazil",
+    "D": "Turkey",
+    "E": "Germany",
+    "F": "Netherlands",
+    "G": "Belgium",
+    "H": "Spain",
+    "I": "France",
+    "J": "Argentina",
+    "K": "Colombia",
+    "L": "England"
+  },
+  "finalsPredictions": {
+    "winner": "Spain",
+    "runnerUp": "Brazil",
+    "third": "France",
+    "fourth": "Argentina"
+  }
+}

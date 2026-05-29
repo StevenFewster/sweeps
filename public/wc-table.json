@@ -1,19 +1,9 @@
 {
   "countries": [
     {
-      "name": "Mexico",
-      "shortName": "MEX",
-      "group": "A",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "South Africa",
-      "shortName": "SOU",
-      "group": "A",
+      "name": "Algeria",
+      "shortName": "ALG",
+      "group": "J",
       "groupPosition": 2,
       "groupPlayed": 0,
       "groupPoints": 0,
@@ -21,9 +11,19 @@
       "finalPosition": null
     },
     {
-      "name": "South Korea",
-      "shortName": "SOU",
-      "group": "A",
+      "name": "Argentina",
+      "shortName": "ARG",
+      "group": "J",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Australia",
+      "shortName": "AUS",
+      "group": "D",
       "groupPosition": 3,
       "groupPlayed": 0,
       "groupPoints": 0,
@@ -31,19 +31,19 @@
       "finalPosition": null
     },
     {
-      "name": "Czech Republic",
-      "shortName": "CZE",
-      "group": "A",
-      "groupPosition": 4,
+      "name": "Austria",
+      "shortName": "AUT",
+      "group": "J",
+      "groupPosition": 3,
       "groupPlayed": 0,
       "groupPoints": 0,
       "isLast16": false,
       "finalPosition": null
     },
     {
-      "name": "Canada",
-      "shortName": "CAN",
-      "group": "B",
+      "name": "Belgium",
+      "shortName": "BEL",
+      "group": "G",
       "groupPosition": 1,
       "groupPlayed": 0,
       "groupPoints": 0,
@@ -52,29 +52,9 @@
     },
     {
       "name": "Bosnia-Herzegovina",
-      "shortName": "BOS",
+      "shortName": "BIH",
       "group": "B",
       "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Qatar",
-      "shortName": "QAT",
-      "group": "B",
-      "groupPosition": 3,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Switzerland",
-      "shortName": "SWI",
-      "group": "B",
-      "groupPosition": 4,
       "groupPlayed": 0,
       "groupPoints": 0,
       "isLast16": false,
@@ -91,10 +71,130 @@
       "finalPosition": null
     },
     {
-      "name": "Morocco",
-      "shortName": "MOR",
-      "group": "C",
+      "name": "Canada",
+      "shortName": "CAN",
+      "group": "B",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Cape Verde",
+      "shortName": "CPV",
+      "group": "H",
       "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Colombia",
+      "shortName": "COL",
+      "group": "K",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Congo DR",
+      "shortName": "CGO",
+      "group": "K",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Croatia",
+      "shortName": "CRO",
+      "group": "L",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Curaçao",
+      "shortName": "CUW",
+      "group": "E",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Czech Republic",
+      "shortName": "CZE",
+      "group": "A",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Ecuador",
+      "shortName": "ECU",
+      "group": "E",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Egypt",
+      "shortName": "EGY",
+      "group": "G",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "England",
+      "shortName": "ENG",
+      "group": "L",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "France",
+      "shortName": "FRA",
+      "group": "I",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Germany",
+      "shortName": "GER",
+      "group": "E",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Ghana",
+      "shortName": "GHA",
+      "group": "L",
+      "groupPosition": 3,
       "groupPlayed": 0,
       "groupPoints": 0,
       "isLast16": false,
@@ -104,6 +204,156 @@
       "name": "Haiti",
       "shortName": "HAI",
       "group": "C",
+      "groupPosition": 3,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Iran",
+      "shortName": "IRN",
+      "group": "G",
+      "groupPosition": 3,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Iraq",
+      "shortName": "IRQ",
+      "group": "I",
+      "groupPosition": 3,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Ivory Coast",
+      "shortName": "CIV",
+      "group": "E",
+      "groupPosition": 3,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Japan",
+      "shortName": "JPN",
+      "group": "F",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Jordan",
+      "shortName": "JOR",
+      "group": "J",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Mexico",
+      "shortName": "MEX",
+      "group": "A",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Morocco",
+      "shortName": "MAR",
+      "group": "C",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Netherlands",
+      "shortName": "NED",
+      "group": "F",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "New Zealand",
+      "shortName": "NZL",
+      "group": "G",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Norway",
+      "shortName": "NOR",
+      "group": "I",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Panama",
+      "shortName": "PAN",
+      "group": "L",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Paraguay",
+      "shortName": "PAR",
+      "group": "D",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Portugal",
+      "shortName": "POR",
+      "group": "K",
+      "groupPosition": 1,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Qatar",
+      "shortName": "QAT",
+      "group": "B",
+      "groupPosition": 3,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "Saudi Arabia",
+      "shortName": "KSA",
+      "group": "H",
       "groupPosition": 3,
       "groupPlayed": 0,
       "groupPoints": 0,
@@ -121,19 +371,9 @@
       "finalPosition": null
     },
     {
-      "name": "United States",
-      "shortName": "UNI",
-      "group": "D",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Paraguay",
-      "shortName": "PAR",
-      "group": "D",
+      "name": "Senegal",
+      "shortName": "SEN",
+      "group": "I",
       "groupPosition": 2,
       "groupPlayed": 0,
       "groupPoints": 0,
@@ -141,9 +381,19 @@
       "finalPosition": null
     },
     {
-      "name": "Australia",
-      "shortName": "AUS",
-      "group": "D",
+      "name": "South Africa",
+      "shortName": "RSA",
+      "group": "A",
+      "groupPosition": 2,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
+      "name": "South Korea",
+      "shortName": "KOR",
+      "group": "A",
       "groupPosition": 3,
       "groupPlayed": 0,
       "groupPoints": 0,
@@ -151,70 +401,10 @@
       "finalPosition": null
     },
     {
-      "name": "Turkey",
-      "shortName": "TUR",
-      "group": "D",
-      "groupPosition": 4,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Germany",
-      "shortName": "GER",
-      "group": "E",
+      "name": "Spain",
+      "shortName": "ESP",
+      "group": "H",
       "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Curaçao",
-      "shortName": "CUR",
-      "group": "E",
-      "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Ivory Coast",
-      "shortName": "IVO",
-      "group": "E",
-      "groupPosition": 3,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Ecuador",
-      "shortName": "ECU",
-      "group": "E",
-      "groupPosition": 4,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Netherlands",
-      "shortName": "NET",
-      "group": "F",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Japan",
-      "shortName": "JAP",
-      "group": "F",
-      "groupPosition": 2,
       "groupPlayed": 0,
       "groupPoints": 0,
       "isLast16": false,
@@ -231,6 +421,16 @@
       "finalPosition": null
     },
     {
+      "name": "Switzerland",
+      "shortName": "SUI",
+      "group": "B",
+      "groupPosition": 4,
+      "groupPlayed": 0,
+      "groupPoints": 0,
+      "isLast16": false,
+      "finalPosition": null
+    },
+    {
       "name": "Tunisia",
       "shortName": "TUN",
       "group": "F",
@@ -241,39 +441,9 @@
       "finalPosition": null
     },
     {
-      "name": "Belgium",
-      "shortName": "BEL",
-      "group": "G",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Egypt",
-      "shortName": "EGY",
-      "group": "G",
-      "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Iran",
-      "shortName": "IRA",
-      "group": "G",
-      "groupPosition": 3,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "New Zealand",
-      "shortName": "NEW",
-      "group": "G",
+      "name": "Turkey",
+      "shortName": "TUR",
+      "group": "D",
       "groupPosition": 4,
       "groupPlayed": 0,
       "groupPoints": 0,
@@ -281,30 +451,10 @@
       "finalPosition": null
     },
     {
-      "name": "Spain",
-      "shortName": "SPA",
-      "group": "H",
+      "name": "United States",
+      "shortName": "USA",
+      "group": "D",
       "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Cape Verde",
-      "shortName": "CAP",
-      "group": "H",
-      "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Saudi Arabia",
-      "shortName": "SAU",
-      "group": "H",
-      "groupPosition": 3,
       "groupPlayed": 0,
       "groupPoints": 0,
       "isLast16": false,
@@ -321,160 +471,10 @@
       "finalPosition": null
     },
     {
-      "name": "France",
-      "shortName": "FRA",
-      "group": "I",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Senegal",
-      "shortName": "SEN",
-      "group": "I",
-      "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Iraq",
-      "shortName": "IRA",
-      "group": "I",
-      "groupPosition": 3,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Norway",
-      "shortName": "NOR",
-      "group": "I",
-      "groupPosition": 4,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Argentina",
-      "shortName": "ARG",
-      "group": "J",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Algeria",
-      "shortName": "ALG",
-      "group": "J",
-      "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Austria",
-      "shortName": "AUS",
-      "group": "J",
-      "groupPosition": 3,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Jordan",
-      "shortName": "JOR",
-      "group": "J",
-      "groupPosition": 4,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Portugal",
-      "shortName": "POR",
-      "group": "K",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Congo DR",
-      "shortName": "CON",
-      "group": "K",
-      "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
       "name": "Uzbekistan",
       "shortName": "UZB",
       "group": "K",
       "groupPosition": 3,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Colombia",
-      "shortName": "COL",
-      "group": "K",
-      "groupPosition": 4,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "England",
-      "shortName": "ENG",
-      "group": "L",
-      "groupPosition": 1,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Croatia",
-      "shortName": "CRO",
-      "group": "L",
-      "groupPosition": 2,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Ghana",
-      "shortName": "GHA",
-      "group": "L",
-      "groupPosition": 3,
-      "groupPlayed": 0,
-      "groupPoints": 0,
-      "isLast16": false,
-      "finalPosition": null
-    },
-    {
-      "name": "Panama",
-      "shortName": "PAN",
-      "group": "L",
-      "groupPosition": 4,
       "groupPlayed": 0,
       "groupPoints": 0,
       "isLast16": false,

@@ -14,7 +14,7 @@ export const PL2027_NAV_ITEMS: NavItem[] = [
 export const WC2026_NAV_ITEMS: NavItem[] = [
   { path: "/wc-2026/how-it-works", text: "How It Works" },
   { path: "/wc-2026/submit-entry", text: "Enter Competition" },
-  { path: "/wc-2026/scores", text: "Result" },
+  { path: "/wc-2026/scores", text: "Scores" },
   { path: "/wc-2026/table", text: "WC Table" },
 ];
 

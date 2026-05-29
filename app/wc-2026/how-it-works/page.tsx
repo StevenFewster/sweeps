@@ -60,7 +60,7 @@ export default function HowItWorksPage() {
               <table className="table table-zebra w-full">
                 <thead>
                   <tr>
-                    <th>Result</th>
+                    <th>Scores</th>
                     <th className="text-right">Points</th>
                   </tr>
                 </thead>
@@ -148,7 +148,9 @@ export default function HowItWorksPage() {
                       or picked Brazil 1st — they lost the final
                     </td>
                     <td className="text-right">
-                      <span className="badge badge-info font-bold">2 pts</span>
+                      <span className="badge badge-accent font-bold">
+                        2 pts
+                      </span>
                     </td>
                   </tr>
                   <tr>
@@ -160,7 +162,7 @@ export default function HowItWorksPage() {
                       Picked Mexico 4th — they won the tournament
                     </td>
                     <td className="text-right">
-                      <span className="badge badge-ghost font-bold">1 pt</span>
+                      <span className="badge badge-info font-bold">1 pt</span>
                     </td>
                   </tr>
                   <tr>
