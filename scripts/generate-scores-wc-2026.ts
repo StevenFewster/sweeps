@@ -109,7 +109,7 @@ function calculateGroupScores(
     const country = countries.find((c) => c.name === predictedTeam);
     let score = 0;
 
-    if (country) {
+    if (country && country.groupPlayed > 0) {
       // 3 points if predicted team finished 1st in their group
       if (country.groupPosition === 1) {
         score += 3;
