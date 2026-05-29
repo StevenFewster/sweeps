@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 import wcTableData from "@/public/wc-table.json";
 import emailjs from "@emailjs/browser";
 
-
 const STEPS = ["Details", "Group Stage", "The Finals"];
 const GROUP_LETTERS = [
   "A",
@@ -258,7 +257,8 @@ function StepDetails({
         </label>
         <p className="text-sm text-base-content/60 mb-2">
           Predict how many yellow cards will be issued across all 104 matches.
-          The record is <strong>345</strong> set at the 2006 World Cup (64 matches).
+          The record is <strong>345</strong> set at the 2006 World Cup (64
+          matches).
         </p>
         <input
           id="tieBreak"
@@ -485,7 +485,6 @@ export default function SubmitEntryPage() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
