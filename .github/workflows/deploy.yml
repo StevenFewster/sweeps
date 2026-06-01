@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -25,22 +25,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: npm
-          
+
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Generate scores
-        run: npm run update
-        
+        run: npm run update-wc-scores
+
+      - name: Commit updated scores
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/scores-wc-2026.json public/wc-table.json
+          git diff --cached --quiet || git commit -m "chore: update wc scores and table [skip ci]"
+          git push
+
       - name: Build with Next.js
         run: npm run build
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

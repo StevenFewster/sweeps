@@ -1,0 +1,26 @@
+{
+  "name": "Ian Palmer",
+  "displayName": "Ian",
+  "league": "TRINITY",
+  "tieBreak": "287",
+  "groupPredictions": {
+    "A": "Mexico",
+    "B": "Switzerland",
+    "C": "Morocco",
+    "D": "Turkey",
+    "E": "Germany",
+    "F": "Netherlands",
+    "G": "Belgium",
+    "H": "Spain",
+    "I": "France",
+    "J": "Argentina",
+    "K": "Portugal",
+    "L": "England"
+  },
+  "finalsPredictions": {
+    "winner": "France",
+    "runnerUp": "Argentina",
+    "third": "Spain",
+    "fourth": "Morocco"
+  }
+}
