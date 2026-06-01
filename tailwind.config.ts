@@ -6,6 +6,20 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      keyframes: {
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '60%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        'fade-out': 'fadeOut 2s ease-in-out forwards',
+      },
+    },
+  },
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["dracula"],

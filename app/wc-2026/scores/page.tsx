@@ -1,5 +1,6 @@
 import PageNav from "@/components/PageNav";
 import { WcGroupScoreCell, WcFinalScoreCell } from "@/components/WcScoreCells";
+import WcShareButton from "@/components/WcShareButton";
 import { WC2026_NAV_ITEMS } from "@/lib/constants";
 import scoresData from "@/public/scores-wc-2026.json";
 import React from "react";
@@ -78,6 +79,10 @@ export default function ScoresPage() {
                           rowSpan={2}
                           className="font-bold text-base align-middle border-r border-base-300 whitespace-nowrap"
                         >
+                          <WcShareButton
+                            playerName={player.name}
+                            finalScores={player.finalScores}
+                          />
                           {player.name}
                         </td>
                         <td
