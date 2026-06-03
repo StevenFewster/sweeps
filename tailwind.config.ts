@@ -10,13 +10,13 @@ const config: Config = {
     extend: {
       keyframes: {
         fadeOut: {
-          '0%': { opacity: '1' },
-          '60%': { opacity: '1' },
-          '100%': { opacity: '0' },
+          "0%": { opacity: "1" },
+          "60%": { opacity: "1" },
+          "100%": { opacity: "0" },
         },
       },
       animation: {
-        'fade-out': 'fadeOut 2s ease-in-out forwards',
+        "fade-out": "fadeOut 2s ease-in-out forwards",
       },
     },
   },

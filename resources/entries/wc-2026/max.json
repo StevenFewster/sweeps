@@ -1,0 +1,26 @@
+{
+  "name": "Max Dowling",
+  "displayName": "Dowling",
+  "league": "TRINITY",
+  "tieBreak": "279",
+  "groupPredictions": {
+    "A": "Mexico",
+    "B": "Switzerland",
+    "C": "Scotland",
+    "D": "Turkey",
+    "E": "Germany",
+    "F": "Netherlands",
+    "G": "Belgium",
+    "H": "Spain",
+    "I": "France",
+    "J": "Argentina",
+    "K": "Colombia",
+    "L": "Croatia"
+  },
+  "finalsPredictions": {
+    "winner": "England",
+    "runnerUp": "Brazil",
+    "third": "Argentina",
+    "fourth": "France"
+  }
+}
