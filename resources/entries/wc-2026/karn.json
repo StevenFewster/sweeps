@@ -1,0 +1,26 @@
+{
+  "name": "Karn Boland ",
+  "displayName": "Karn ",
+  "league": "TRINITY",
+  "tieBreak": "401",
+  "groupPredictions": {
+    "A": "Mexico",
+    "B": "Switzerland",
+    "C": "Brazil",
+    "D": "United States",
+    "E": "Germany",
+    "F": "Netherlands",
+    "G": "Belgium",
+    "H": "Spain",
+    "I": "France",
+    "J": "Argentina",
+    "K": "Portugal",
+    "L": "England"
+  },
+  "finalsPredictions": {
+    "winner": "France",
+    "runnerUp": "Argentina",
+    "third": "England",
+    "fourth": "Brazil"
+  }
+}
