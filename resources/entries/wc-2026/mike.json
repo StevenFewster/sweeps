@@ -1,0 +1,26 @@
+{
+  "name": "Michael Hall",
+  "displayName": "hall_or_nothing",
+  "league": "TRINITY",
+  "tieBreak": "560",
+  "groupPredictions": {
+    "A": "Mexico",
+    "B": "Switzerland",
+    "C": "Brazil",
+    "D": "United States",
+    "E": "Germany",
+    "F": "Japan",
+    "G": "Belgium",
+    "H": "Spain",
+    "I": "France",
+    "J": "Argentina",
+    "K": "Portugal",
+    "L": "England"
+  },
+  "finalsPredictions": {
+    "winner": "England",
+    "runnerUp": "Argentina",
+    "third": "France",
+    "fourth": "Spain"
+  }
+}
