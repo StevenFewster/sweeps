@@ -122,7 +122,7 @@
       "name": "Dowling",
       "league": "TRINITY",
       "totalScore": 0,
-      "tieBreak": "279",
+      "tieBreak": "324",
       "groupScores": {
         "A": {
           "name": "Mexico",
@@ -827,5 +827,5 @@
       }
     }
   ],
-  "updatedDate": "2026-06-04T18:53:28.848Z"
+  "updatedDate": "2026-06-05T16:53:13.203Z"
 }
