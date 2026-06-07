@@ -1,0 +1,26 @@
+{
+  "name": "James meara",
+  "displayName": "Beard",
+  "league": "TRINITY",
+  "tieBreak": "387",
+  "groupPredictions": {
+    "A": "Mexico",
+    "B": "Canada",
+    "C": "Brazil",
+    "D": "United States",
+    "E": "Germany",
+    "F": "Japan",
+    "G": "Egypt",
+    "H": "Spain",
+    "I": "Senegal",
+    "J": "Argentina",
+    "K": "Colombia",
+    "L": "England"
+  },
+  "finalsPredictions": {
+    "winner": "Spain",
+    "runnerUp": "Brazil",
+    "third": "Argentina",
+    "fourth": "France"
+  }
+}
