@@ -119,6 +119,124 @@
       }
     },
     {
+      "name": "Wayne",
+      "league": "TRINITY",
+      "totalScore": 0,
+      "tieBreak": "369",
+      "groupScores": {
+        "A": {
+          "name": "Czech Republic",
+          "shortName": "CZE",
+          "groupPosition": 4,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "B": {
+          "name": "Switzerland",
+          "shortName": "SUI",
+          "groupPosition": 4,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "C": {
+          "name": "Brazil",
+          "shortName": "BRA",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "D": {
+          "name": "United States",
+          "shortName": "USA",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "E": {
+          "name": "Germany",
+          "shortName": "GER",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "F": {
+          "name": "Netherlands",
+          "shortName": "NED",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "G": {
+          "name": "Belgium",
+          "shortName": "BEL",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "H": {
+          "name": "Spain",
+          "shortName": "ESP",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "I": {
+          "name": "France",
+          "shortName": "FRA",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "J": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "K": {
+          "name": "Portugal",
+          "shortName": "POR",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        },
+        "L": {
+          "name": "England",
+          "shortName": "ENG",
+          "groupPosition": 1,
+          "groupPlayed": 0,
+          "score": 0
+        }
+      },
+      "finalScores": {
+        "winner": {
+          "name": "Spain",
+          "shortName": "ESP",
+          "finalPosition": null,
+          "score": 0
+        },
+        "runnerUp": {
+          "name": "France",
+          "shortName": "FRA",
+          "finalPosition": null,
+          "score": 0
+        },
+        "third": {
+          "name": "England",
+          "shortName": "ENG",
+          "finalPosition": null,
+          "score": 0
+        },
+        "fourth": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "finalPosition": null,
+          "score": 0
+        }
+      }
+    },
+    {
       "name": "Beard",
       "league": "TRINITY",
       "totalScore": 0,
@@ -1063,5 +1181,5 @@
       }
     }
   ],
-  "updatedDate": "2026-06-08T09:56:51.595Z"
+  "updatedDate": "2026-06-09T20:51:52.619Z"
 }
