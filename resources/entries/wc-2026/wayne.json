@@ -1,0 +1,26 @@
+{
+  "name": "Wayne Rix",
+  "displayName": "Wayne",
+  "league": "TRINITY",
+  "tieBreak": "369",
+  "groupPredictions": {
+    "A": "Czech Republic",
+    "B": "Switzerland",
+    "C": "Brazil",
+    "D": "United States",
+    "E": "Germany",
+    "F": "Netherlands",
+    "G": "Belgium",
+    "H": "Spain",
+    "I": "France",
+    "J": "Argentina",
+    "K": "Portugal",
+    "L": "England"
+  },
+  "finalsPredictions": {
+    "winner": "Spain",
+    "runnerUp": "France",
+    "third": "England",
+    "fourth": "Argentina"
+  }
+}
