@@ -1,0 +1,26 @@
+{
+  "name": "Jacqui",
+  "displayName": "Jaq",
+  "league": "TRINITY",
+  "tieBreak": "281",
+  "groupPredictions": {
+    "A": "Mexico",
+    "B": "Qatar",
+    "C": "Morocco",
+    "D": "Turkey",
+    "E": "Germany",
+    "F": "Japan",
+    "G": "Belgium",
+    "H": "Spain",
+    "I": "France",
+    "J": "Argentina",
+    "K": "Portugal",
+    "L": "Croatia"
+  },
+  "finalsPredictions": {
+    "winner": "Argentina",
+    "runnerUp": "Spain",
+    "third": "England",
+    "fourth": "France"
+  }
+}
