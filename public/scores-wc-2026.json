@@ -632,9 +632,9 @@
           "score": 0
         },
         "F": {
-          "name": "Netherlands",
-          "shortName": "NED",
-          "groupPosition": 1,
+          "name": "Japan",
+          "shortName": "JPN",
+          "groupPosition": 2,
           "groupPlayed": 0,
           "score": 0
         },
@@ -1181,5 +1181,5 @@
       }
     }
   ],
-  "updatedDate": "2026-06-09T20:51:52.619Z"
+  "updatedDate": "2026-06-11T06:07:20.238Z"
 }
