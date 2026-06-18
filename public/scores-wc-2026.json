@@ -121,7 +121,7 @@
     {
       "name": "hall_or_nothing",
       "league": "TRINITY",
-      "totalScore": 17,
+      "totalScore": 20,
       "tieBreak": "560",
       "groupScores": {
         "A": {
@@ -135,8 +135,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -239,7 +239,7 @@
     {
       "name": "Dowling",
       "league": "TRINITY",
-      "totalScore": 16,
+      "totalScore": 19,
       "tieBreak": "324",
       "groupScores": {
         "A": {
@@ -253,8 +253,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Scotland",
@@ -357,7 +357,7 @@
     {
       "name": "Karn ",
       "league": "TRINITY",
-      "totalScore": 16,
+      "totalScore": 19,
       "tieBreak": "401",
       "groupScores": {
         "A": {
@@ -371,8 +371,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -475,15 +475,15 @@
     {
       "name": "Jack",
       "league": "TRINITY",
-      "totalScore": 16,
+      "totalScore": 19,
       "tieBreak": "402",
       "groupScores": {
         "B": {
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -593,7 +593,7 @@
     {
       "name": "Fewster",
       "league": "TRINITY",
-      "totalScore": 16,
+      "totalScore": 19,
       "tieBreak": "423",
       "groupScores": {
         "A": {
@@ -607,8 +607,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -711,7 +711,7 @@
     {
       "name": "Frankiebabe",
       "league": "TRINITY",
-      "totalScore": 16,
+      "totalScore": 19,
       "tieBreak": "437",
       "groupScores": {
         "A": {
@@ -725,8 +725,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -829,7 +829,7 @@
     {
       "name": "Steve Doe",
       "league": "TRINITY",
-      "totalScore": 16,
+      "totalScore": 19,
       "tieBreak": "555",
       "groupScores": {
         "A": {
@@ -843,8 +843,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -947,7 +947,7 @@
     {
       "name": "Ian",
       "league": "TRINITY",
-      "totalScore": 15,
+      "totalScore": 18,
       "tieBreak": "410",
       "groupScores": {
         "A": {
@@ -961,8 +961,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Morocco",
@@ -1065,7 +1065,7 @@
     {
       "name": "Wayne",
       "league": "TRINITY",
-      "totalScore": 13,
+      "totalScore": 16,
       "tieBreak": "369",
       "groupScores": {
         "A": {
@@ -1079,8 +1079,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -1183,7 +1183,7 @@
     {
       "name": "Beard's Brother",
       "league": "TRINITY",
-      "totalScore": 13,
+      "totalScore": 16,
       "tieBreak": "593",
       "groupScores": {
         "A": {
@@ -1197,8 +1197,8 @@
           "name": "Switzerland",
           "shortName": "SWI",
           "groupPosition": 1,
-          "groupPlayed": 0,
-          "score": 0
+          "groupPlayed": 1,
+          "score": 3
         },
         "C": {
           "name": "Brazil",
@@ -1417,5 +1417,5 @@
       }
     }
   ],
-  "updatedDate": "2026-06-18T17:59:17.182Z"
+  "updatedDate": "2026-06-18T18:30:52.925Z"
 }
