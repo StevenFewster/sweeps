@@ -3,7 +3,8 @@
  *
  * Fetches the World Cup 2026 group tables from BBC Sport and writes
  * public/wc-table.json. One entry per country with:
- *   group, groupPosition, groupPlayed, groupPoints, isLast16, finalPosition
+ *   group, groupPosition, groupPlayed, groupGoalsFor, groupGoalsAgainst,
+ *   groupGoalDifference, groupPoints, isLast16, finalPosition
  *
  * Usage: npm run update-wc-table
  */
@@ -18,6 +19,9 @@ interface CountryEntry {
   group: string;
   groupPosition: number;
   groupPlayed: number;
+  groupGoalsFor: number;
+  groupGoalsAgainst: number;
+  groupGoalDifference: number;
   groupPoints: number;
   isLast16: boolean;
   finalPosition: number | null;
@@ -143,11 +147,18 @@ async function fetchWCTable(): Promise<CountryEntry[]> {
       const numericCells = cellTexts.filter(
         (t) => !isNaN(Number(t)) && t !== "",
       );
-      // numericCells[0] may be the position — skip if same as groupPosition
-      let offset = 0;
-      if (Number(numericCells[0]) === groupPosition) offset = 1;
+      // Skip the first numeric cell only when the first table cell is a
+      // standalone numeric position column. BBC sometimes folds the position
+      // into the team cell text (for example "1Argentina"), in which case
+      // the numeric cells start directly at Played.
+      const hasStandalonePositionCell = /^\d+$/.test(cellTexts[0] ?? "");
+      const offset = hasStandalonePositionCell ? 1 : 0;
 
       const groupPlayed = parseInt(numericCells[offset] ?? "0") || 0;
+      const groupGoalsFor = parseInt(numericCells[offset + 4] ?? "0") || 0;
+      const groupGoalsAgainst = parseInt(numericCells[offset + 5] ?? "0") || 0;
+      const groupGoalDifference =
+        parseInt(numericCells[offset + 6] ?? "0") || 0;
       // Points is the last numeric column
       const groupPoints =
         parseInt(numericCells[numericCells.length - 1] ?? "0") || 0;
@@ -158,6 +169,9 @@ async function fetchWCTable(): Promise<CountryEntry[]> {
         group,
         groupPosition,
         groupPlayed,
+        groupGoalsFor,
+        groupGoalsAgainst,
+        groupGoalDifference,
         groupPoints,
         isLast16: false,
         finalPosition: null,

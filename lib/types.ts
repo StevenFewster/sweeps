@@ -45,6 +45,25 @@ export interface ScoresData {
   generatedAt: string;
 }
 
+export interface WcCountry {
+  name: string;
+  shortName: string;
+  group: string;
+  groupPosition: number;
+  groupPlayed: number;
+  groupGoalsFor: number;
+  groupGoalsAgainst: number;
+  groupGoalDifference: number;
+  groupPoints: number;
+  isLast16: boolean;
+  finalPosition: number | null;
+}
+
+export interface WcTableData {
+  countries: WcCountry[];
+  timestamp: string;
+}
+
 export type NavItem = {
   path: string;
   text: string;
