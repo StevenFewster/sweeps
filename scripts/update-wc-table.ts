@@ -8,9 +8,9 @@
  * Usage: npm run update-wc-table
  */
 
-import * as fs from 'fs';
-import * as path from 'path';
-import { JSDOM } from 'jsdom';
+import * as fs from "fs";
+import * as path from "path";
+import { JSDOM } from "jsdom";
 
 interface CountryEntry {
   name: string;
@@ -28,15 +28,15 @@ interface WCTable {
   timestamp: string;
 }
 
-const GROUPS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
+const GROUPS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"];
 
 async function fetchWCTable(): Promise<CountryEntry[]> {
-  const url = 'https://www.bbc.co.uk/sport/football/world-cup/table';
+  const url = "https://www.bbc.co.uk/sport/football/world-cup/table";
 
   const response = await fetch(url, {
     headers: {
-      'User-Agent':
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     },
   });
 
@@ -58,7 +58,7 @@ async function fetchWCTable(): Promise<CountryEntry[]> {
   // Strategy 1: find elements whose text content is exactly "Group X"
   // (h2, h3, h4, or any element with a group-related class/attribute).
   const headingCandidates = Array.from(
-    document.querySelectorAll('h2, h3, h4, [class*="group"], [data-group]')
+    document.querySelectorAll('h2, h3, h4, [class*="group"], [data-group]'),
   );
 
   for (const group of GROUPS) {
@@ -66,7 +66,7 @@ async function fetchWCTable(): Promise<CountryEntry[]> {
 
     // Find the heading for this group
     const heading = headingCandidates.find((el) => {
-      const text = el.textContent?.trim() ?? '';
+      const text = el.textContent?.trim() ?? "";
       return text === groupLabel || text.startsWith(groupLabel);
     });
 
@@ -83,7 +83,7 @@ async function fetchWCTable(): Promise<CountryEntry[]> {
       continue;
     }
 
-    const rows = Array.from(table.querySelectorAll('tbody tr'));
+    const rows = Array.from(table.querySelectorAll("tbody tr"));
 
     if (rows.length === 0) {
       console.warn(`  Warning: no rows in table for ${groupLabel}`);
@@ -91,57 +91,66 @@ async function fetchWCTable(): Promise<CountryEntry[]> {
     }
 
     rows.forEach((row, index) => {
-      const cells = Array.from(row.querySelectorAll('td'));
+      const cells = Array.from(row.querySelectorAll("td"));
       if (cells.length < 3) return;
 
-      const cellTexts = cells.map((c) => c.textContent?.trim() ?? '');
+      const cellTexts = cells.map((c) => c.textContent?.trim() ?? "");
 
       // Position — first numeric cell, or fall back to row index
       let groupPosition = index + 1;
-      if (!isNaN(Number(cellTexts[0])) && cellTexts[0] !== '') {
+      if (!isNaN(Number(cellTexts[0])) && cellTexts[0] !== "") {
         groupPosition = parseInt(cellTexts[0]);
       }
 
       // Team name — first non-numeric, non-empty cell of reasonable length.
       // BBC sometimes includes an image/abbr inside the cell so we also check
       // for an <abbr> or <span> with the full name.
-      let name = '';
-      let shortName = '';
+      let name = "";
+      let shortName = "";
       for (const cell of cells) {
-        const abbr = cell.querySelector('abbr');
-        const span = cell.querySelector('span[class*="name"], span[class*="team"]');
-        const full = abbr?.getAttribute('title') ?? span?.textContent?.trim() ?? '';
-        const cellText = cell.textContent?.trim() ?? '';
+        const abbr = cell.querySelector("abbr");
+        const span = cell.querySelector(
+          'span[class*="name"], span[class*="team"]',
+        );
+        const full =
+          abbr?.getAttribute("title") ?? span?.textContent?.trim() ?? "";
+        const cellText = cell.textContent?.trim() ?? "";
 
         if (full.length > 2) {
           name = full;
-          shortName = abbr?.textContent?.trim() ?? cellText.substring(0, 3).toUpperCase();
+          shortName =
+            abbr?.textContent?.trim() ?? cellText.substring(0, 3).toUpperCase();
           break;
         }
 
         if (cellText.length > 2 && isNaN(Number(cellText))) {
           // Strip any leading digits (position number bled into the cell text)
-          name = cellText.replace(/^\d+/, '').trim();
+          name = cellText.replace(/^\d+/, "").trim();
           shortName = name.substring(0, 3).toUpperCase();
           break;
         }
       }
 
       if (!name) {
-        console.warn(`  Warning: could not parse team name in row ${index + 1} of ${groupLabel}`);
+        console.warn(
+          `  Warning: could not parse team name in row ${index + 1} of ${groupLabel}`,
+        );
         return;
       }
 
       // Numeric columns after the name cell.
       // Typical BBC column order: Pos | Team | P | W | D | L | GF | GA | GD | Pts
-      const numericCells = cellTexts.filter((t) => !isNaN(Number(t)) && t !== '');
+      const numericCells = cellTexts.filter(
+        (t) => !isNaN(Number(t)) && t !== "",
+      );
       // numericCells[0] may be the position — skip if same as groupPosition
       let offset = 0;
       if (Number(numericCells[0]) === groupPosition) offset = 1;
 
-      const groupPlayed = parseInt(numericCells[offset] ?? '0') || 0;
+      const groupPlayed = parseInt(numericCells[offset] ?? "0") || 0;
       // Points is the last numeric column
-      const groupPoints = parseInt(numericCells[numericCells.length - 1] ?? '0') || 0;
+      const groupPoints =
+        parseInt(numericCells[numericCells.length - 1] ?? "0") || 0;
 
       countries.push({
         name,
@@ -170,11 +179,11 @@ function findNextTable(startEl: Element): Element | null {
   let sibling = startEl.nextElementSibling;
   while (sibling) {
     const tag = sibling.tagName.toLowerCase();
-    if (tag === 'table') return sibling;
-    const nested = sibling.querySelector('table');
+    if (tag === "table") return sibling;
+    const nested = sibling.querySelector("table");
     if (nested) return nested;
     // Stop if we've hit another group heading
-    const text = sibling.textContent?.trim() ?? '';
+    const text = sibling.textContent?.trim() ?? "";
     if (/^Group [A-L]/.test(text)) break;
     sibling = sibling.nextElementSibling;
   }
@@ -185,10 +194,10 @@ function findNextTable(startEl: Element): Element | null {
     let parentSibling = parent.nextElementSibling;
     while (parentSibling) {
       const tag = parentSibling.tagName.toLowerCase();
-      if (tag === 'table') return parentSibling;
-      const nested = parentSibling.querySelector('table');
+      if (tag === "table") return parentSibling;
+      const nested = parentSibling.querySelector("table");
       if (nested) return nested;
-      const text = parentSibling.textContent?.trim() ?? '';
+      const text = parentSibling.textContent?.trim() ?? "";
       if (/^Group [A-L]/.test(text)) break;
       parentSibling = parentSibling.nextElementSibling;
     }
@@ -199,28 +208,32 @@ function findNextTable(startEl: Element): Element | null {
 
 async function run() {
   try {
-    console.log('Fetching World Cup table from BBC Sport...');
+    console.log("Fetching World Cup table from BBC Sport...");
 
-    const countries = await fetchWCTable();
+    let countries = await fetchWCTable();
 
     if (countries.length === 0) {
-      throw new Error('No country data was parsed — check the page structure.');
+      throw new Error("No country data was parsed — check the page structure.");
     }
 
-    console.log(`\nParsed ${countries.length} countries across ${new Set(countries.map((c) => c.group)).size} groups`);
+    console.log(
+      `\nParsed ${countries.length} countries across ${new Set(countries.map((c) => c.group)).size} groups`,
+    );
+
+    countries = countries.sort((a, b) => a.name.localeCompare(b.name));
 
     const output: WCTable = {
       countries,
       timestamp: new Date().toISOString(),
     };
 
-    const outputPath = path.join(process.cwd(), 'public', 'wc-table.json');
+    const outputPath = path.join(process.cwd(), "public", "wc-table.json");
     fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
 
     console.log(`\nWorld Cup table saved to: ${outputPath}`);
     console.log(`Updated at: ${output.timestamp}`);
   } catch (error) {
-    console.error('Failed to update World Cup table:', error);
+    console.error("Failed to update World Cup table:", error);
     process.exit(1);
   }
 }
