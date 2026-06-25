@@ -11,21 +11,21 @@ export default function Home() {
           <p className="text-lg mb-6">
             Enter and Track Your Sports Prediction Sweepstake!
           </p>
-          <div className="indicator w-full">
+          <Link
+            href="/wc-2026/scores"
+            className="btn btn-primary btn-outline w-full"
+          >
+            World Cup 2026
+          </Link>
+          <div className="indicator w-full mt-4">
             <span className="indicator-item badge badge-warning">New</span>
             <Link
-              href="/wc-2026/how-it-works"
+              href="/pl-26-27/submit-entry"
               className="btn btn-primary btn-outline w-full"
             >
-              World Cup 2026
+              PL Sweepstake 2026/27
             </Link>
           </div>
-          <Link
-            href="/pl-26-27/submit-entry"
-            className="btn btn-primary btn-outline w-full mt-4"
-          >
-            PL Sweepstake 2026/27
-          </Link>
           <div className="divider text-xs text-base-content/40 uppercase tracking-widest my-2">
             Archive
           </div>
