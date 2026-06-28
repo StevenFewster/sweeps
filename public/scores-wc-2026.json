@@ -1065,7 +1065,7 @@
     {
       "name": "Beard",
       "league": "TRINITY",
-      "totalScore": 27,
+      "totalScore": 28,
       "tieBreak": "387",
       "groupScores": {
         "A": {
@@ -1129,7 +1129,7 @@
           "shortName": "SEN",
           "groupPosition": 3,
           "groupPlayed": 3,
-          "score": 0
+          "score": 1
         },
         "J": {
           "name": "Argentina",
@@ -1417,5 +1417,5 @@
       }
     }
   ],
-  "updatedDate": "2026-06-28T19:06:31.495Z"
+  "updatedDate": "2026-06-28T19:43:54.979Z"
 }
