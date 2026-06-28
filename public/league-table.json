@@ -2,107 +2,107 @@
   "teams": [
     {
       "position": 1,
-      "shortName": "ARS",
-      "name": "Arsenal"
-    },
-    {
-      "position": 2,
-      "shortName": "MCI",
-      "name": "Manchester City"
-    },
-    {
-      "position": 3,
-      "shortName": "MUN",
-      "name": "Manchester United"
-    },
-    {
-      "position": 4,
-      "shortName": "AVL",
-      "name": "Aston Villa"
-    },
-    {
-      "position": 5,
-      "shortName": "LIV",
-      "name": "Liverpool"
-    },
-    {
-      "position": 6,
       "shortName": "BOU",
       "name": "AFC Bournemouth"
     },
     {
-      "position": 7,
-      "shortName": "SUN",
-      "name": "Sunderland"
+      "position": 2,
+      "shortName": "ARS",
+      "name": "Arsenal"
     },
     {
-      "position": 8,
-      "shortName": "BHA",
-      "name": "Brighton & Hove Albion"
+      "position": 3,
+      "shortName": "AVL",
+      "name": "Aston Villa"
     },
     {
-      "position": 9,
+      "position": 4,
       "shortName": "BRE",
       "name": "Brentford"
     },
     {
-      "position": 10,
+      "position": 5,
+      "shortName": "BHA",
+      "name": "Brighton & Hove Albion"
+    },
+    {
+      "position": 6,
       "shortName": "CHE",
       "name": "Chelsea"
     },
     {
-      "position": 11,
-      "shortName": "FUL",
-      "name": "Fulham"
+      "position": 7,
+      "shortName": "COV",
+      "name": "Coventry City"
     },
     {
-      "position": 12,
-      "shortName": "NEW",
-      "name": "Newcastle United"
-    },
-    {
-      "position": 13,
-      "shortName": "EVE",
-      "name": "Everton"
-    },
-    {
-      "position": 14,
-      "shortName": "LEE",
-      "name": "Leeds United"
-    },
-    {
-      "position": 15,
+      "position": 8,
       "shortName": "CRY",
       "name": "Crystal Palace"
     },
     {
+      "position": 9,
+      "shortName": "EVE",
+      "name": "Everton"
+    },
+    {
+      "position": 10,
+      "shortName": "FUL",
+      "name": "Fulham"
+    },
+    {
+      "position": 11,
+      "shortName": "HUL",
+      "name": "Hull City"
+    },
+    {
+      "position": 12,
+      "shortName": "IPS",
+      "name": "Ipswich Town"
+    },
+    {
+      "position": 13,
+      "shortName": "LEE",
+      "name": "Leeds United"
+    },
+    {
+      "position": 14,
+      "shortName": "LIV",
+      "name": "Liverpool"
+    },
+    {
+      "position": 15,
+      "shortName": "MCI",
+      "name": "Manchester City"
+    },
+    {
       "position": 16,
+      "shortName": "MUN",
+      "name": "Manchester United"
+    },
+    {
+      "position": 17,
+      "shortName": "NEW",
+      "name": "Newcastle United"
+    },
+    {
+      "position": 18,
       "shortName": "NFO",
       "name": "Nottingham Forest"
     },
     {
-      "position": 17,
-      "shortName": "TOT",
-      "name": "Tottenham Hotspur"
-    },
-    {
-      "position": 18,
-      "shortName": "WHU",
-      "name": "West Ham United"
-    },
-    {
       "position": 19,
-      "shortName": "BUR",
-      "name": "Burnley"
+      "shortName": "SUN",
+      "name": "Sunderland"
     },
     {
       "position": 20,
-      "shortName": "WOL",
-      "name": "Wolverhampton Wanderers"
+      "shortName": "TOT",
+      "name": "Tottenham Hotspur"
     }
   ],
-  "gamesPlayed": 38,
-  "totalGoals": 1045,
-  "estimatedTotalGoals": 1045,
-  "timestamp": "2026-05-25T19:37:17.822Z"
+  "gamesPlayed": 0,
+  "totalGoals": 0,
+  "estimatedTotalGoals": 0,
+  "timestamp": "2026-06-28T18:59:35.986Z"
 }
