@@ -68,7 +68,7 @@ function getStatusBadge(country: WcCountry) {
   if (country.groupPosition === 1) {
     return (
       <span className="badge badge-success badge-sm badge-outline font-semibold">
-        Group leader
+        Group winner
       </span>
     );
   }
@@ -148,7 +148,7 @@ export default function TablePage() {
                 Third/Fourth
               </span>
               <span className="badge badge-success badge-sm badge-outline font-semibold">
-                Group leader
+                Group winner
               </span>
             </div>
           </div>

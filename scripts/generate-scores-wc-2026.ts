@@ -115,7 +115,7 @@ function calculateGroupScores(
         score += 3;
       }
       // 1 point if predicted team made it to last 16
-      if (country.isLast16 || country.groupPosition === 2) {
+      else if (country.isLast16 || country.groupPosition === 2) {
         score += 1;
       }
     }
@@ -157,7 +157,40 @@ function calculateFinalScores(
       winnerScore = 1;
   }
 
+  let runnerUpScore = 0;
+  if (runnerUpCountry?.finalPosition != null) {
+    if (runnerUpCountry.finalPosition === 2) runnerUpScore = 3;
+    else if (runnerUpCountry.finalPosition === 1) runnerUpScore = 2;
+    else if (
+      runnerUpCountry.finalPosition === 3 ||
+      runnerUpCountry.finalPosition === 4
+    )
+      runnerUpScore = 1;
+  }
+
   // TODO: Update the logic for runnerUp, third, and fourth predictions
+  let thirdScore = 0;
+  if (thirdCountry?.finalPosition != null) {
+    if (thirdCountry.finalPosition === 3) thirdScore = 3;
+    else if (thirdCountry.finalPosition === 4) thirdScore = 2;
+    else if (
+      thirdCountry.finalPosition === 1 ||
+      thirdCountry.finalPosition === 2
+    )
+      thirdScore = 1;
+  }
+
+  let fourthScore = 0;
+  if (fourthCountry?.finalPosition != null) {
+    if (fourthCountry.finalPosition === 4) fourthScore = 3;
+    else if (fourthCountry.finalPosition === 3) fourthScore = 2;
+    else if (
+      fourthCountry.finalPosition === 1 ||
+      fourthCountry.finalPosition === 2
+    )
+      fourthScore = 1;
+  }
+
   return {
     winner: {
       name: winner,
@@ -169,19 +202,19 @@ function calculateFinalScores(
       name: runnerUp,
       shortName: runnerUpCountry?.shortName ?? "",
       finalPosition: runnerUpCountry?.finalPosition ?? null,
-      score: 0,
+      score: runnerUpScore,
     },
     third: {
       name: third,
       shortName: thirdCountry?.shortName ?? "",
       finalPosition: thirdCountry?.finalPosition ?? null,
-      score: 0,
+      score: thirdScore,
     },
     fourth: {
       name: fourth,
       shortName: fourthCountry?.shortName ?? "",
       finalPosition: fourthCountry?.finalPosition ?? null,
-      score: 0,
+      score: fourthScore,
     },
   };
 }

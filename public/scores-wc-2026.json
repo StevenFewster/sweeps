@@ -95,25 +95,25 @@
         "winner": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "Brazil",
           "shortName": "BRA",
-          "finalPosition": null,
+          "finalPosition": 16,
           "score": 0
         }
       }
@@ -213,25 +213,25 @@
         "winner": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "Portugal",
           "shortName": "POR",
-          "finalPosition": null,
+          "finalPosition": 16,
           "score": 0
         },
         "fourth": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -331,25 +331,25 @@
         "winner": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -449,25 +449,25 @@
         "winner": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "Portugal",
           "shortName": "POR",
-          "finalPosition": null,
+          "finalPosition": 16,
           "score": 0
         }
       }
@@ -567,25 +567,25 @@
         "winner": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Brazil",
           "shortName": "BRA",
-          "finalPosition": null,
+          "finalPosition": 16,
           "score": 0
         },
         "third": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -685,25 +685,25 @@
         "winner": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -803,25 +803,25 @@
         "winner": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -921,25 +921,25 @@
         "winner": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -1039,25 +1039,25 @@
         "winner": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Brazil",
           "shortName": "BRA",
-          "finalPosition": null,
+          "finalPosition": 16,
           "score": 0
         },
         "third": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -1157,25 +1157,25 @@
         "winner": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Brazil",
           "shortName": "BRA",
-          "finalPosition": null,
+          "finalPosition": 16,
           "score": 0
         },
         "third": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
@@ -1275,25 +1275,25 @@
         "winner": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "Morocco",
           "shortName": "MOR",
-          "finalPosition": null,
+          "finalPosition": 8,
           "score": 0
         }
       }
@@ -1393,29 +1393,29 @@
         "winner": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "runnerUp": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         },
         "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": null,
+          "finalPosition": 0,
           "score": 0
         }
       }
     }
   ],
-  "updatedDate": "2026-06-28T19:43:54.979Z"
+  "updatedDate": "2026-07-14T18:09:04.230Z"
 }
