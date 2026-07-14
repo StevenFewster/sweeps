@@ -7,11 +7,11 @@
       "groupPosition": 3,
       "groupPlayed": 3,
       "groupGoalsFor": 5,
-      "groupGoalsAgainst": 7,
-      "groupGoalDifference": -2,
+      "groupGoalsAgainst": 9,
+      "groupGoalDifference": -4,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Argentina",
@@ -19,12 +19,12 @@
       "group": "J",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 8,
-      "groupGoalsAgainst": 1,
-      "groupGoalDifference": 7,
+      "groupGoalsFor": 17,
+      "groupGoalsAgainst": 5,
+      "groupGoalDifference": 12,
       "groupPoints": 9,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 4
     },
     {
       "name": "Australia",
@@ -32,25 +32,25 @@
       "group": "D",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 2,
-      "groupGoalsAgainst": 2,
+      "groupGoalsFor": 3,
+      "groupGoalsAgainst": 3,
       "groupGoalDifference": 0,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Austria",
-      "shortName": "AUS",
+      "shortName": "AUT",
       "group": "J",
       "groupPosition": 2,
       "groupPlayed": 3,
       "groupGoalsFor": 6,
-      "groupGoalsAgainst": 6,
-      "groupGoalDifference": 0,
+      "groupGoalsAgainst": 9,
+      "groupGoalDifference": -3,
       "groupPoints": 4,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 32
     },
     {
       "name": "Belgium",
@@ -58,12 +58,12 @@
       "group": "G",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 6,
-      "groupGoalsAgainst": 2,
-      "groupGoalDifference": 4,
+      "groupGoalsFor": 14,
+      "groupGoalsAgainst": 7,
+      "groupGoalDifference": 7,
       "groupPoints": 5,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 8
     },
     {
       "name": "Bosnia-Herzegovina",
@@ -72,11 +72,11 @@
       "groupPosition": 3,
       "groupPlayed": 3,
       "groupGoalsFor": 5,
-      "groupGoalsAgainst": 6,
-      "groupGoalDifference": -1,
+      "groupGoalsAgainst": 8,
+      "groupGoalDifference": -3,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Brazil",
@@ -84,12 +84,12 @@
       "group": "C",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 7,
-      "groupGoalsAgainst": 1,
+      "groupGoalsFor": 10,
+      "groupGoalsAgainst": 4,
       "groupGoalDifference": 6,
       "groupPoints": 7,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "Canada",
@@ -97,12 +97,12 @@
       "group": "B",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 8,
-      "groupGoalsAgainst": 3,
-      "groupGoalDifference": 5,
+      "groupGoalsFor": 9,
+      "groupGoalsAgainst": 6,
+      "groupGoalDifference": 3,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "Cape Verde",
@@ -110,12 +110,12 @@
       "group": "H",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 2,
-      "groupGoalsAgainst": 2,
-      "groupGoalDifference": 0,
+      "groupGoalsFor": 4,
+      "groupGoalsAgainst": 5,
+      "groupGoalDifference": -1,
       "groupPoints": 3,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Colombia",
@@ -123,12 +123,12 @@
       "group": "K",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 4,
+      "groupGoalsFor": 5,
       "groupGoalsAgainst": 1,
       "groupGoalDifference": 3,
       "groupPoints": 7,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "Congo DR",
@@ -136,12 +136,12 @@
       "group": "K",
       "groupPosition": 3,
       "groupPlayed": 3,
-      "groupGoalsFor": 4,
-      "groupGoalsAgainst": 3,
-      "groupGoalDifference": 1,
+      "groupGoalsFor": 5,
+      "groupGoalsAgainst": 5,
+      "groupGoalDifference": 0,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Croatia",
@@ -149,12 +149,12 @@
       "group": "L",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 5,
-      "groupGoalsAgainst": 5,
-      "groupGoalDifference": 0,
+      "groupGoalsFor": 6,
+      "groupGoalsAgainst": 7,
+      "groupGoalDifference": -1,
       "groupPoints": 6,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Curaçao",
@@ -167,7 +167,7 @@
       "groupGoalDifference": -8,
       "groupPoints": 1,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Czech Republic",
@@ -180,7 +180,7 @@
       "groupGoalDifference": -4,
       "groupPoints": 1,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Ecuador",
@@ -189,11 +189,11 @@
       "groupPosition": 3,
       "groupPlayed": 3,
       "groupGoalsFor": 2,
-      "groupGoalsAgainst": 2,
-      "groupGoalDifference": 0,
+      "groupGoalsAgainst": 4,
+      "groupGoalDifference": -2,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Egypt",
@@ -201,12 +201,12 @@
       "group": "G",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 5,
-      "groupGoalsAgainst": 3,
-      "groupGoalDifference": 2,
+      "groupGoalsFor": 8,
+      "groupGoalsAgainst": 7,
+      "groupGoalDifference": 1,
       "groupPoints": 5,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "England",
@@ -214,12 +214,12 @@
       "group": "L",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 6,
-      "groupGoalsAgainst": 2,
-      "groupGoalDifference": 4,
+      "groupGoalsFor": 13,
+      "groupGoalsAgainst": 6,
+      "groupGoalDifference": 7,
       "groupPoints": 7,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 4
     },
     {
       "name": "France",
@@ -227,12 +227,12 @@
       "group": "I",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 10,
+      "groupGoalsFor": 16,
       "groupGoalsAgainst": 2,
-      "groupGoalDifference": 8,
+      "groupGoalDifference": 14,
       "groupPoints": 9,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 4
     },
     {
       "name": "Germany",
@@ -240,12 +240,12 @@
       "group": "E",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 10,
-      "groupGoalsAgainst": 4,
+      "groupGoalsFor": 11,
+      "groupGoalsAgainst": 5,
       "groupGoalDifference": 6,
       "groupPoints": 6,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Ghana",
@@ -254,11 +254,11 @@
       "groupPosition": 3,
       "groupPlayed": 3,
       "groupGoalsFor": 2,
-      "groupGoalsAgainst": 2,
-      "groupGoalDifference": 0,
+      "groupGoalsAgainst": 3,
+      "groupGoalDifference": -1,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Haiti",
@@ -271,7 +271,7 @@
       "groupGoalDifference": -6,
       "groupPoints": 0,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Iran",
@@ -284,7 +284,7 @@
       "groupGoalDifference": 0,
       "groupPoints": 3,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Iraq",
@@ -297,7 +297,7 @@
       "groupGoalDifference": -11,
       "groupPoints": 0,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Ivory Coast",
@@ -305,12 +305,12 @@
       "group": "E",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 4,
-      "groupGoalsAgainst": 2,
-      "groupGoalDifference": 2,
+      "groupGoalsFor": 5,
+      "groupGoalsAgainst": 4,
+      "groupGoalDifference": 1,
       "groupPoints": 6,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Japan",
@@ -318,12 +318,12 @@
       "group": "F",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 7,
-      "groupGoalsAgainst": 3,
+      "groupGoalsFor": 8,
+      "groupGoalsAgainst": 5,
       "groupGoalDifference": 4,
       "groupPoints": 5,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Jordan",
@@ -336,7 +336,7 @@
       "groupGoalDifference": -5,
       "groupPoints": 0,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Mexico",
@@ -344,12 +344,12 @@
       "group": "A",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 6,
-      "groupGoalsAgainst": 0,
-      "groupGoalDifference": 6,
+      "groupGoalsFor": 10,
+      "groupGoalsAgainst": 3,
+      "groupGoalDifference": 7,
       "groupPoints": 9,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "Morocco",
@@ -357,12 +357,12 @@
       "group": "C",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 6,
-      "groupGoalsAgainst": 3,
-      "groupGoalDifference": 3,
+      "groupGoalsFor": 10,
+      "groupGoalsAgainst": 4,
+      "groupGoalDifference": 6,
       "groupPoints": 7,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 8
     },
     {
       "name": "Netherlands",
@@ -370,12 +370,12 @@
       "group": "F",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 10,
-      "groupGoalsAgainst": 4,
+      "groupGoalsFor": 11,
+      "groupGoalsAgainst": 5,
       "groupGoalDifference": 6,
       "groupPoints": 7,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "New Zealand",
@@ -388,7 +388,7 @@
       "groupGoalDifference": -6,
       "groupPoints": 1,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Norway",
@@ -396,12 +396,12 @@
       "group": "I",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 8,
-      "groupGoalsAgainst": 7,
-      "groupGoalDifference": 1,
+      "groupGoalsFor": 13,
+      "groupGoalsAgainst": 11,
+      "groupGoalDifference": 2,
       "groupPoints": 6,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 8
     },
     {
       "name": "Panama",
@@ -414,7 +414,7 @@
       "groupGoalDifference": -4,
       "groupPoints": 0,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Paraguay",
@@ -422,12 +422,12 @@
       "group": "D",
       "groupPosition": 3,
       "groupPlayed": 3,
-      "groupGoalsFor": 2,
-      "groupGoalsAgainst": 4,
-      "groupGoalDifference": -2,
+      "groupGoalsFor": 3,
+      "groupGoalsAgainst": 6,
+      "groupGoalDifference": -3,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "Portugal",
@@ -435,12 +435,12 @@
       "group": "K",
       "groupPosition": 2,
       "groupPlayed": 3,
-      "groupGoalsFor": 6,
-      "groupGoalsAgainst": 1,
+      "groupGoalsFor": 8,
+      "groupGoalsAgainst": 3,
       "groupGoalDifference": 5,
       "groupPoints": 5,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "Qatar",
@@ -453,7 +453,7 @@
       "groupGoalDifference": -8,
       "groupPoints": 1,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Saudi Arabia",
@@ -466,7 +466,7 @@
       "groupGoalDifference": -4,
       "groupPoints": 2,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Scotland",
@@ -479,7 +479,7 @@
       "groupGoalDifference": -3,
       "groupPoints": 3,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Senegal",
@@ -487,12 +487,12 @@
       "group": "I",
       "groupPosition": 3,
       "groupPlayed": 3,
-      "groupGoalsFor": 8,
-      "groupGoalsAgainst": 6,
-      "groupGoalDifference": 2,
+      "groupGoalsFor": 10,
+      "groupGoalsAgainst": 9,
+      "groupGoalDifference": 1,
       "groupPoints": 3,
       "isLast16": true,
-      "finalPosition": null
+      "finalPosition": 32
     },
     {
       "name": "South Africa",
@@ -501,11 +501,11 @@
       "groupPosition": 2,
       "groupPlayed": 3,
       "groupGoalsFor": 2,
-      "groupGoalsAgainst": 3,
-      "groupGoalDifference": -1,
+      "groupGoalsAgainst": 4,
+      "groupGoalDifference": -2,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "South Korea",
@@ -518,7 +518,7 @@
       "groupGoalDifference": -1,
       "groupPoints": 3,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Spain",
@@ -526,12 +526,12 @@
       "group": "H",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 5,
-      "groupGoalsAgainst": 0,
-      "groupGoalDifference": 5,
+      "groupGoalsFor": 11,
+      "groupGoalsAgainst": 1,
+      "groupGoalDifference": 10,
       "groupPoints": 7,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 4
     },
     {
       "name": "Sweden",
@@ -540,11 +540,11 @@
       "groupPosition": 3,
       "groupPlayed": 3,
       "groupGoalsFor": 7,
-      "groupGoalsAgainst": 7,
-      "groupGoalDifference": 0,
+      "groupGoalsAgainst": 10,
+      "groupGoalDifference": -3,
       "groupPoints": 4,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 32
     },
     {
       "name": "Switzerland",
@@ -552,12 +552,12 @@
       "group": "B",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 7,
-      "groupGoalsAgainst": 3,
+      "groupGoalsFor": 10,
+      "groupGoalsAgainst": 6,
       "groupGoalDifference": 4,
       "groupPoints": 7,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 8
     },
     {
       "name": "Tunisia",
@@ -570,7 +570,7 @@
       "groupGoalDifference": -10,
       "groupPoints": 0,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Turkey",
@@ -583,7 +583,7 @@
       "groupGoalDifference": -2,
       "groupPoints": 3,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "United States",
@@ -591,12 +591,12 @@
       "group": "D",
       "groupPosition": 1,
       "groupPlayed": 3,
-      "groupGoalsFor": 8,
-      "groupGoalsAgainst": 4,
-      "groupGoalDifference": 4,
+      "groupGoalsFor": 11,
+      "groupGoalsAgainst": 8,
+      "groupGoalDifference": 3,
       "groupPoints": 6,
-      "isLast16": false,
-      "finalPosition": null
+      "isLast16": true,
+      "finalPosition": 16
     },
     {
       "name": "Uruguay",
@@ -609,7 +609,7 @@
       "groupGoalDifference": -1,
       "groupPoints": 2,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     },
     {
       "name": "Uzbekistan",
@@ -622,7 +622,7 @@
       "groupGoalDifference": -9,
       "groupPoints": 0,
       "isLast16": false,
-      "finalPosition": null
+      "finalPosition": 48
     }
   ],
   "timestamp": "2026-06-28T19:00:04.117Z"
