@@ -159,7 +159,7 @@ function calculateFinalScores(
 
   let runnerUpScore = 0;
   if (runnerUpCountry?.finalPosition != null) {
-    if (runnerUpCountry.finalPosition === 2) runnerUpScore = 3;
+    if (runnerUpCountry.finalPosition === 2) runnerUpScore = 5;
     else if (runnerUpCountry.finalPosition === 1) runnerUpScore = 2;
     else if (
       runnerUpCountry.finalPosition === 3 ||
@@ -171,7 +171,7 @@ function calculateFinalScores(
   // TODO: Update the logic for runnerUp, third, and fourth predictions
   let thirdScore = 0;
   if (thirdCountry?.finalPosition != null) {
-    if (thirdCountry.finalPosition === 3) thirdScore = 3;
+    if (thirdCountry.finalPosition === 3) thirdScore = 5;
     else if (thirdCountry.finalPosition === 4) thirdScore = 2;
     else if (
       thirdCountry.finalPosition === 1 ||
@@ -182,7 +182,7 @@ function calculateFinalScores(
 
   let fourthScore = 0;
   if (fourthCountry?.finalPosition != null) {
-    if (fourthCountry.finalPosition === 4) fourthScore = 3;
+    if (fourthCountry.finalPosition === 4) fourthScore = 5;
     else if (fourthCountry.finalPosition === 3) fourthScore = 2;
     else if (
       fourthCountry.finalPosition === 1 ||

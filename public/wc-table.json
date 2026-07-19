@@ -24,7 +24,7 @@
       "groupGoalDifference": 12,
       "groupPoints": 9,
       "isLast16": false,
-      "finalPosition": 0
+      "finalPosition": 2
     },
     {
       "name": "Australia",
@@ -219,7 +219,7 @@
       "groupGoalDifference": 7,
       "groupPoints": 7,
       "isLast16": true,
-      "finalPosition": 0
+      "finalPosition": 3
     },
     {
       "name": "France",
@@ -232,7 +232,7 @@
       "groupGoalDifference": 14,
       "groupPoints": 9,
       "isLast16": true,
-      "finalPosition": 0
+      "finalPosition": 4
     },
     {
       "name": "Germany",
@@ -531,7 +531,7 @@
       "groupGoalDifference": 10,
       "groupPoints": 7,
       "isLast16": true,
-      "finalPosition": 0
+      "finalPosition": 1
     },
     {
       "name": "Sweden",

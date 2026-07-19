@@ -1,245 +1,9 @@
 {
   "players": [
     {
-      "name": "Karn ",
-      "league": "TRINITY",
-      "totalScore": 34,
-      "tieBreak": "401",
-      "groupScores": {
-        "A": {
-          "name": "Mexico",
-          "shortName": "MEX",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "B": {
-          "name": "Switzerland",
-          "shortName": "SWI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "C": {
-          "name": "Brazil",
-          "shortName": "BRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "D": {
-          "name": "United States",
-          "shortName": "UNI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "E": {
-          "name": "Germany",
-          "shortName": "GER",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "F": {
-          "name": "Netherlands",
-          "shortName": "NET",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "G": {
-          "name": "Belgium",
-          "shortName": "BEL",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "H": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "I": {
-          "name": "France",
-          "shortName": "FRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "J": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "K": {
-          "name": "Portugal",
-          "shortName": "POR",
-          "groupPosition": 2,
-          "groupPlayed": 3,
-          "score": 1
-        },
-        "L": {
-          "name": "England",
-          "shortName": "ENG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        }
-      },
-      "finalScores": {
-        "winner": {
-          "name": "France",
-          "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "runnerUp": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "third": {
-          "name": "England",
-          "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "fourth": {
-          "name": "Brazil",
-          "shortName": "BRA",
-          "finalPosition": 16,
-          "score": 0
-        }
-      }
-    },
-    {
-      "name": "Jack",
-      "league": "TRINITY",
-      "totalScore": 34,
-      "tieBreak": "402",
-      "groupScores": {
-        "B": {
-          "name": "Switzerland",
-          "shortName": "SWI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "C": {
-          "name": "Brazil",
-          "shortName": "BRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "D": {
-          "name": "United States",
-          "shortName": "UNI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "E": {
-          "name": "Germany",
-          "shortName": "GER",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "F": {
-          "name": "Netherlands",
-          "shortName": "NET",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "G": {
-          "name": "Belgium",
-          "shortName": "BEL",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "H": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "I": {
-          "name": "France",
-          "shortName": "FRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "J": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "K": {
-          "name": "Portugal",
-          "shortName": "POR",
-          "groupPosition": 2,
-          "groupPlayed": 3,
-          "score": 1
-        },
-        "L": {
-          "name": "England",
-          "shortName": "ENG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "A": {
-          "name": "Mexico",
-          "shortName": "MEX",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        }
-      },
-      "finalScores": {
-        "winner": {
-          "name": "France",
-          "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "runnerUp": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "third": {
-          "name": "Portugal",
-          "shortName": "POR",
-          "finalPosition": 16,
-          "score": 0
-        },
-        "fourth": {
-          "name": "England",
-          "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
-        }
-      }
-    },
-    {
       "name": "Frankiebabe",
       "league": "TRINITY",
-      "totalScore": 34,
+      "totalScore": 46,
       "tieBreak": "437",
       "groupScores": {
         "A": {
@@ -331,34 +95,34 @@
         "winner": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 1,
+          "score": 5
         },
         "runnerUp": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 4,
+          "score": 1
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 3,
+          "score": 5
         },
         "fourth": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 2,
+          "score": 1
         }
       }
     },
     {
-      "name": "Steve Doe",
+      "name": "Karn ",
       "league": "TRINITY",
-      "totalScore": 34,
-      "tieBreak": "555",
+      "totalScore": 45,
+      "tieBreak": "401",
       "groupScores": {
         "A": {
           "name": "Mexico",
@@ -447,381 +211,27 @@
       },
       "finalScores": {
         "winner": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "runnerUp": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 4,
+          "score": 1
+        },
+        "runnerUp": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "finalPosition": 2,
+          "score": 5
         },
         "third": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "fourth": {
-          "name": "Portugal",
-          "shortName": "POR",
-          "finalPosition": 16,
-          "score": 0
-        }
-      }
-    },
-    {
-      "name": "Fewster",
-      "league": "TRINITY",
-      "totalScore": 33,
-      "tieBreak": "423",
-      "groupScores": {
-        "A": {
-          "name": "Mexico",
-          "shortName": "MEX",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "B": {
-          "name": "Switzerland",
-          "shortName": "SWI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "C": {
-          "name": "Brazil",
-          "shortName": "BRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "D": {
-          "name": "Turkey",
-          "shortName": "TUR",
-          "groupPosition": 4,
-          "groupPlayed": 3,
-          "score": 0
-        },
-        "E": {
-          "name": "Germany",
-          "shortName": "GER",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "F": {
-          "name": "Netherlands",
-          "shortName": "NET",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "G": {
-          "name": "Belgium",
-          "shortName": "BEL",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "H": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "I": {
-          "name": "France",
-          "shortName": "FRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "J": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "K": {
-          "name": "Colombia",
-          "shortName": "COL",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "L": {
           "name": "England",
           "shortName": "ENG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        }
-      },
-      "finalScores": {
-        "winner": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 3,
+          "score": 5
         },
-        "runnerUp": {
+        "fourth": {
           "name": "Brazil",
           "shortName": "BRA",
           "finalPosition": 16,
-          "score": 0
-        },
-        "third": {
-          "name": "France",
-          "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "fourth": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
-        }
-      }
-    },
-    {
-      "name": "hall_or_nothing",
-      "league": "TRINITY",
-      "totalScore": 32,
-      "tieBreak": "560",
-      "groupScores": {
-        "A": {
-          "name": "Mexico",
-          "shortName": "MEX",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "B": {
-          "name": "Switzerland",
-          "shortName": "SWI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "C": {
-          "name": "Brazil",
-          "shortName": "BRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "D": {
-          "name": "United States",
-          "shortName": "UNI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "E": {
-          "name": "Germany",
-          "shortName": "GER",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "F": {
-          "name": "Japan",
-          "shortName": "JAP",
-          "groupPosition": 2,
-          "groupPlayed": 3,
-          "score": 1
-        },
-        "G": {
-          "name": "Belgium",
-          "shortName": "BEL",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "H": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "I": {
-          "name": "France",
-          "shortName": "FRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "J": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "K": {
-          "name": "Portugal",
-          "shortName": "POR",
-          "groupPosition": 2,
-          "groupPlayed": 3,
-          "score": 1
-        },
-        "L": {
-          "name": "England",
-          "shortName": "ENG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        }
-      },
-      "finalScores": {
-        "winner": {
-          "name": "England",
-          "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "runnerUp": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "third": {
-          "name": "France",
-          "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "fourth": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
-        }
-      }
-    },
-    {
-      "name": "Wayne",
-      "league": "TRINITY",
-      "totalScore": 31,
-      "tieBreak": "369",
-      "groupScores": {
-        "A": {
-          "name": "Czech Republic",
-          "shortName": "CZE",
-          "groupPosition": 4,
-          "groupPlayed": 3,
-          "score": 0
-        },
-        "B": {
-          "name": "Switzerland",
-          "shortName": "SWI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "C": {
-          "name": "Brazil",
-          "shortName": "BRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "D": {
-          "name": "United States",
-          "shortName": "UNI",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "E": {
-          "name": "Germany",
-          "shortName": "GER",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "F": {
-          "name": "Netherlands",
-          "shortName": "NET",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "G": {
-          "name": "Belgium",
-          "shortName": "BEL",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "H": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "I": {
-          "name": "France",
-          "shortName": "FRA",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "J": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        },
-        "K": {
-          "name": "Portugal",
-          "shortName": "POR",
-          "groupPosition": 2,
-          "groupPlayed": 3,
-          "score": 1
-        },
-        "L": {
-          "name": "England",
-          "shortName": "ENG",
-          "groupPosition": 1,
-          "groupPlayed": 3,
-          "score": 3
-        }
-      },
-      "finalScores": {
-        "winner": {
-          "name": "Spain",
-          "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "runnerUp": {
-          "name": "France",
-          "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "third": {
-          "name": "England",
-          "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "fourth": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "finalPosition": 0,
           "score": 0
         }
       }
@@ -829,7 +239,7 @@
     {
       "name": "Beard's Brother",
       "league": "TRINITY",
-      "totalScore": 31,
+      "totalScore": 45,
       "tieBreak": "593",
       "groupScores": {
         "A": {
@@ -921,34 +331,152 @@
         "winner": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 2,
+          "score": 2
         },
         "runnerUp": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 1,
+          "score": 2
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 3,
+          "score": 5
         },
         "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 4,
+          "score": 5
         }
       }
     },
     {
-      "name": "Dowling",
+      "name": "Wayne",
       "league": "TRINITY",
-      "totalScore": 28,
-      "tieBreak": "324",
+      "totalScore": 43,
+      "tieBreak": "369",
+      "groupScores": {
+        "A": {
+          "name": "Czech Republic",
+          "shortName": "CZE",
+          "groupPosition": 4,
+          "groupPlayed": 3,
+          "score": 0
+        },
+        "B": {
+          "name": "Switzerland",
+          "shortName": "SWI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "C": {
+          "name": "Brazil",
+          "shortName": "BRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "D": {
+          "name": "United States",
+          "shortName": "UNI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "E": {
+          "name": "Germany",
+          "shortName": "GER",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "F": {
+          "name": "Netherlands",
+          "shortName": "NET",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "G": {
+          "name": "Belgium",
+          "shortName": "BEL",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "H": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "I": {
+          "name": "France",
+          "shortName": "FRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "J": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "K": {
+          "name": "Portugal",
+          "shortName": "POR",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        },
+        "L": {
+          "name": "England",
+          "shortName": "ENG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        }
+      },
+      "finalScores": {
+        "winner": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "finalPosition": 1,
+          "score": 5
+        },
+        "runnerUp": {
+          "name": "France",
+          "shortName": "FRA",
+          "finalPosition": 4,
+          "score": 1
+        },
+        "third": {
+          "name": "England",
+          "shortName": "ENG",
+          "finalPosition": 3,
+          "score": 5
+        },
+        "fourth": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "finalPosition": 2,
+          "score": 1
+        }
+      }
+    },
+    {
+      "name": "Fewster",
+      "league": "TRINITY",
+      "totalScore": 41,
+      "tieBreak": "423",
       "groupScores": {
         "A": {
           "name": "Mexico",
@@ -965,11 +493,11 @@
           "score": 3
         },
         "C": {
-          "name": "Scotland",
-          "shortName": "SCO",
-          "groupPosition": 3,
+          "name": "Brazil",
+          "shortName": "BRA",
+          "groupPosition": 1,
           "groupPlayed": 3,
-          "score": 0
+          "score": 3
         },
         "D": {
           "name": "Turkey",
@@ -1028,19 +556,19 @@
           "score": 3
         },
         "L": {
-          "name": "Croatia",
-          "shortName": "CRO",
-          "groupPosition": 2,
+          "name": "England",
+          "shortName": "ENG",
+          "groupPosition": 1,
           "groupPlayed": 3,
-          "score": 1
+          "score": 3
         }
       },
       "finalScores": {
         "winner": {
-          "name": "England",
-          "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
+          "name": "Spain",
+          "shortName": "SPA",
+          "finalPosition": 1,
+          "score": 5
         },
         "runnerUp": {
           "name": "Brazil",
@@ -1049,23 +577,141 @@
           "score": 0
         },
         "third": {
-          "name": "Argentina",
-          "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 4,
+          "score": 2
+        },
+        "fourth": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "finalPosition": 2,
+          "score": 1
+        }
+      }
+    },
+    {
+      "name": "hall_or_nothing",
+      "league": "TRINITY",
+      "totalScore": 41,
+      "tieBreak": "560",
+      "groupScores": {
+        "A": {
+          "name": "Mexico",
+          "shortName": "MEX",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "B": {
+          "name": "Switzerland",
+          "shortName": "SWI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "C": {
+          "name": "Brazil",
+          "shortName": "BRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "D": {
+          "name": "United States",
+          "shortName": "UNI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "E": {
+          "name": "Germany",
+          "shortName": "GER",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "F": {
+          "name": "Japan",
+          "shortName": "JAP",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        },
+        "G": {
+          "name": "Belgium",
+          "shortName": "BEL",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "H": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "I": {
+          "name": "France",
+          "shortName": "FRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "J": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "K": {
+          "name": "Portugal",
+          "shortName": "POR",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        },
+        "L": {
+          "name": "England",
+          "shortName": "ENG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        }
+      },
+      "finalScores": {
+        "winner": {
+          "name": "England",
+          "shortName": "ENG",
+          "finalPosition": 3,
+          "score": 1
+        },
+        "runnerUp": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "finalPosition": 2,
+          "score": 5
+        },
+        "third": {
+          "name": "France",
+          "shortName": "FRA",
+          "finalPosition": 4,
+          "score": 2
+        },
+        "fourth": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "finalPosition": 1,
+          "score": 1
         }
       }
     },
     {
       "name": "Beard",
       "league": "TRINITY",
-      "totalScore": 28,
+      "totalScore": 39,
       "tieBreak": "387",
       "groupScores": {
         "A": {
@@ -1157,8 +803,8 @@
         "winner": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 1,
+          "score": 5
         },
         "runnerUp": {
           "name": "Brazil",
@@ -1169,22 +815,140 @@
         "third": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 2,
+          "score": 1
         },
         "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 4,
+          "score": 5
         }
       }
     },
     {
-      "name": "Ian",
+      "name": "Jack",
       "league": "TRINITY",
-      "totalScore": 27,
-      "tieBreak": "410",
+      "totalScore": 39,
+      "tieBreak": "402",
+      "groupScores": {
+        "B": {
+          "name": "Switzerland",
+          "shortName": "SWI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "C": {
+          "name": "Brazil",
+          "shortName": "BRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "D": {
+          "name": "United States",
+          "shortName": "UNI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "E": {
+          "name": "Germany",
+          "shortName": "GER",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "F": {
+          "name": "Netherlands",
+          "shortName": "NET",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "G": {
+          "name": "Belgium",
+          "shortName": "BEL",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "H": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "I": {
+          "name": "France",
+          "shortName": "FRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "J": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "K": {
+          "name": "Portugal",
+          "shortName": "POR",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        },
+        "L": {
+          "name": "England",
+          "shortName": "ENG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "A": {
+          "name": "Mexico",
+          "shortName": "MEX",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        }
+      },
+      "finalScores": {
+        "winner": {
+          "name": "France",
+          "shortName": "FRA",
+          "finalPosition": 4,
+          "score": 1
+        },
+        "runnerUp": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "finalPosition": 1,
+          "score": 2
+        },
+        "third": {
+          "name": "Portugal",
+          "shortName": "POR",
+          "finalPosition": 16,
+          "score": 0
+        },
+        "fourth": {
+          "name": "England",
+          "shortName": "ENG",
+          "finalPosition": 3,
+          "score": 2
+        }
+      }
+    },
+    {
+      "name": "Steve Doe",
+      "league": "TRINITY",
+      "totalScore": 38,
+      "tieBreak": "555",
       "groupScores": {
         "A": {
           "name": "Mexico",
@@ -1201,18 +965,18 @@
           "score": 3
         },
         "C": {
-          "name": "Morocco",
-          "shortName": "MOR",
-          "groupPosition": 2,
+          "name": "Brazil",
+          "shortName": "BRA",
+          "groupPosition": 1,
           "groupPlayed": 3,
-          "score": 1
+          "score": 3
         },
         "D": {
-          "name": "Turkey",
-          "shortName": "TUR",
-          "groupPosition": 4,
+          "name": "United States",
+          "shortName": "UNI",
+          "groupPosition": 1,
           "groupPlayed": 3,
-          "score": 0
+          "score": 3
         },
         "E": {
           "name": "Germany",
@@ -1222,11 +986,11 @@
           "score": 3
         },
         "F": {
-          "name": "Japan",
-          "shortName": "JAP",
-          "groupPosition": 2,
+          "name": "Netherlands",
+          "shortName": "NET",
+          "groupPosition": 1,
           "groupPlayed": 3,
-          "score": 1
+          "score": 3
         },
         "G": {
           "name": "Belgium",
@@ -1273,27 +1037,27 @@
       },
       "finalScores": {
         "winner": {
-          "name": "France",
-          "shortName": "FRA",
-          "finalPosition": 0,
-          "score": 0
-        },
-        "runnerUp": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 2,
+          "score": 2
+        },
+        "runnerUp": {
+          "name": "France",
+          "shortName": "FRA",
+          "finalPosition": 4,
+          "score": 1
         },
         "third": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 1,
+          "score": 1
         },
         "fourth": {
-          "name": "Morocco",
-          "shortName": "MOR",
-          "finalPosition": 8,
+          "name": "Portugal",
+          "shortName": "POR",
+          "finalPosition": 16,
           "score": 0
         }
       }
@@ -1301,7 +1065,7 @@
     {
       "name": "Jaq",
       "league": "TRINITY",
-      "totalScore": 22,
+      "totalScore": 36,
       "tieBreak": "281",
       "groupScores": {
         "A": {
@@ -1393,29 +1157,265 @@
         "winner": {
           "name": "Argentina",
           "shortName": "ARG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 2,
+          "score": 2
         },
         "runnerUp": {
           "name": "Spain",
           "shortName": "SPA",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 1,
+          "score": 2
         },
         "third": {
           "name": "England",
           "shortName": "ENG",
-          "finalPosition": 0,
-          "score": 0
+          "finalPosition": 3,
+          "score": 5
         },
         "fourth": {
           "name": "France",
           "shortName": "FRA",
-          "finalPosition": 0,
+          "finalPosition": 4,
+          "score": 5
+        }
+      }
+    },
+    {
+      "name": "Dowling",
+      "league": "TRINITY",
+      "totalScore": 35,
+      "tieBreak": "324",
+      "groupScores": {
+        "A": {
+          "name": "Mexico",
+          "shortName": "MEX",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "B": {
+          "name": "Switzerland",
+          "shortName": "SWI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "C": {
+          "name": "Scotland",
+          "shortName": "SCO",
+          "groupPosition": 3,
+          "groupPlayed": 3,
+          "score": 0
+        },
+        "D": {
+          "name": "Turkey",
+          "shortName": "TUR",
+          "groupPosition": 4,
+          "groupPlayed": 3,
+          "score": 0
+        },
+        "E": {
+          "name": "Germany",
+          "shortName": "GER",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "F": {
+          "name": "Netherlands",
+          "shortName": "NET",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "G": {
+          "name": "Belgium",
+          "shortName": "BEL",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "H": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "I": {
+          "name": "France",
+          "shortName": "FRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "J": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "K": {
+          "name": "Colombia",
+          "shortName": "COL",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "L": {
+          "name": "Croatia",
+          "shortName": "CRO",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        }
+      },
+      "finalScores": {
+        "winner": {
+          "name": "England",
+          "shortName": "ENG",
+          "finalPosition": 3,
+          "score": 1
+        },
+        "runnerUp": {
+          "name": "Brazil",
+          "shortName": "BRA",
+          "finalPosition": 16,
+          "score": 0
+        },
+        "third": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "finalPosition": 2,
+          "score": 1
+        },
+        "fourth": {
+          "name": "France",
+          "shortName": "FRA",
+          "finalPosition": 4,
+          "score": 5
+        }
+      }
+    },
+    {
+      "name": "Ian",
+      "league": "TRINITY",
+      "totalScore": 34,
+      "tieBreak": "410",
+      "groupScores": {
+        "A": {
+          "name": "Mexico",
+          "shortName": "MEX",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "B": {
+          "name": "Switzerland",
+          "shortName": "SWI",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "C": {
+          "name": "Morocco",
+          "shortName": "MOR",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        },
+        "D": {
+          "name": "Turkey",
+          "shortName": "TUR",
+          "groupPosition": 4,
+          "groupPlayed": 3,
+          "score": 0
+        },
+        "E": {
+          "name": "Germany",
+          "shortName": "GER",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "F": {
+          "name": "Japan",
+          "shortName": "JAP",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        },
+        "G": {
+          "name": "Belgium",
+          "shortName": "BEL",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "H": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "I": {
+          "name": "France",
+          "shortName": "FRA",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "J": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        },
+        "K": {
+          "name": "Portugal",
+          "shortName": "POR",
+          "groupPosition": 2,
+          "groupPlayed": 3,
+          "score": 1
+        },
+        "L": {
+          "name": "England",
+          "shortName": "ENG",
+          "groupPosition": 1,
+          "groupPlayed": 3,
+          "score": 3
+        }
+      },
+      "finalScores": {
+        "winner": {
+          "name": "France",
+          "shortName": "FRA",
+          "finalPosition": 4,
+          "score": 1
+        },
+        "runnerUp": {
+          "name": "Argentina",
+          "shortName": "ARG",
+          "finalPosition": 2,
+          "score": 5
+        },
+        "third": {
+          "name": "Spain",
+          "shortName": "SPA",
+          "finalPosition": 1,
+          "score": 1
+        },
+        "fourth": {
+          "name": "Morocco",
+          "shortName": "MOR",
+          "finalPosition": 8,
           "score": 0
         }
       }
     }
   ],
-  "updatedDate": "2026-07-14T18:12:18.565Z"
+  "updatedDate": "2026-07-19T22:24:57.862Z"
 }
