@@ -36,7 +36,7 @@ jobs:
         run: npm ci
 
       - name: Generate scores
-        run: npm run update-wc-scores
+        run: npm run update
 
       - name: Commit updated scores
         run: |
