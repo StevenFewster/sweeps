@@ -12,10 +12,7 @@
     "generate-scores": "tsx scripts/generate-scores.ts",
     "generate-scores-25-26": "tsx scripts/generate-scores-25-26.ts",
     "update-league-table": "tsx scripts/update-league-table.ts",
-    "update-wc-table": "tsx scripts/update-wc-table.ts",
-    "update-wc-scores": "tsx scripts/generate-scores-wc-2026.ts",
-    "update": "npm run update-league-table && npm run generate-scores",
-    "update-wc": "npm run update-wc-scores"
+    "update": "npm run update-league-table && npm run generate-scores"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

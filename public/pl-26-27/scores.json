@@ -1,9 +1,9 @@
 {
   "players": [
     {
-      "name": "DEFAULT",
-      "totalScore": 35,
-      "tieBreaker": 1045,
+      "name": "Ian",
+      "totalScore": 21,
+      "tieBreaker": 1178,
       "teamScores": [
         {
           "position": 1,
@@ -19,21 +19,21 @@
         },
         {
           "position": 3,
-          "team": "MUN",
-          "actualPosition": 3,
-          "score": 5
+          "team": "CHE",
+          "actualPosition": 10,
+          "score": 0
         },
         {
           "position": 4,
-          "team": "AVL",
-          "actualPosition": 4,
-          "score": 5
+          "team": "MUN",
+          "actualPosition": 3,
+          "score": 1
         },
         {
           "position": 18,
-          "team": "COV",
-          "actualPosition": 18,
-          "score": 5
+          "team": "NEW",
+          "actualPosition": 12,
+          "score": 0
         },
         {
           "position": 19,
@@ -48,8 +48,253 @@
           "score": 5
         }
       ]
+    },
+    {
+      "name": "Frankiebabe",
+      "totalScore": 20,
+      "tieBreaker": 1056,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 5
+        },
+        {
+          "position": 2,
+          "team": "MCI",
+          "actualPosition": 2,
+          "score": 5
+        },
+        {
+          "position": 3,
+          "team": "CHE",
+          "actualPosition": 10,
+          "score": 0
+        },
+        {
+          "position": 4,
+          "team": "TOT",
+          "actualPosition": 17,
+          "score": 0
+        },
+        {
+          "position": 18,
+          "team": "CRY",
+          "actualPosition": 15,
+          "score": 0
+        },
+        {
+          "position": 19,
+          "team": "IPS",
+          "actualPosition": 19,
+          "score": 5
+        },
+        {
+          "position": 20,
+          "team": "HUL",
+          "actualPosition": 20,
+          "score": 5
+        }
+      ]
+    },
+    {
+      "name": "Grant",
+      "totalScore": 20,
+      "tieBreaker": 1076,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 5
+        },
+        {
+          "position": 2,
+          "team": "MCI",
+          "actualPosition": 2,
+          "score": 5
+        },
+        {
+          "position": 3,
+          "team": "CHE",
+          "actualPosition": 10,
+          "score": 0
+        },
+        {
+          "position": 4,
+          "team": "LIV",
+          "actualPosition": 5,
+          "score": 0
+        },
+        {
+          "position": 18,
+          "team": "CRY",
+          "actualPosition": 15,
+          "score": 0
+        },
+        {
+          "position": 19,
+          "team": "IPS",
+          "actualPosition": 19,
+          "score": 5
+        },
+        {
+          "position": 20,
+          "team": "HUL",
+          "actualPosition": 20,
+          "score": 5
+        }
+      ]
+    },
+    {
+      "name": "Geordie",
+      "totalScore": 18,
+      "tieBreaker": 1083,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 5
+        },
+        {
+          "position": 2,
+          "team": "CHE",
+          "actualPosition": 10,
+          "score": 0
+        },
+        {
+          "position": 3,
+          "team": "MUN",
+          "actualPosition": 3,
+          "score": 5
+        },
+        {
+          "position": 4,
+          "team": "MCI",
+          "actualPosition": 2,
+          "score": 1
+        },
+        {
+          "position": 18,
+          "team": "IPS",
+          "actualPosition": 19,
+          "score": 1
+        },
+        {
+          "position": 19,
+          "team": "COV",
+          "actualPosition": 18,
+          "score": 1
+        },
+        {
+          "position": 20,
+          "team": "HUL",
+          "actualPosition": 20,
+          "score": 5
+        }
+      ]
+    },
+    {
+      "name": "Fewster",
+      "totalScore": 17,
+      "tieBreaker": 1067,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "MCI",
+          "actualPosition": 2,
+          "score": 1
+        },
+        {
+          "position": 2,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 1
+        },
+        {
+          "position": 3,
+          "team": "MUN",
+          "actualPosition": 3,
+          "score": 5
+        },
+        {
+          "position": 4,
+          "team": "LIV",
+          "actualPosition": 5,
+          "score": 0
+        },
+        {
+          "position": 18,
+          "team": "LEE",
+          "actualPosition": 14,
+          "score": 0
+        },
+        {
+          "position": 19,
+          "team": "IPS",
+          "actualPosition": 19,
+          "score": 5
+        },
+        {
+          "position": 20,
+          "team": "HUL",
+          "actualPosition": 20,
+          "score": 5
+        }
+      ]
+    },
+    {
+      "name": "Beard",
+      "totalScore": 16,
+      "tieBreaker": 1076,
+      "teamScores": [
+        {
+          "position": 1,
+          "team": "ARS",
+          "actualPosition": 1,
+          "score": 5
+        },
+        {
+          "position": 2,
+          "team": "CHE",
+          "actualPosition": 10,
+          "score": 0
+        },
+        {
+          "position": 3,
+          "team": "MUN",
+          "actualPosition": 3,
+          "score": 5
+        },
+        {
+          "position": 4,
+          "team": "LIV",
+          "actualPosition": 5,
+          "score": 0
+        },
+        {
+          "position": 18,
+          "team": "SUN",
+          "actualPosition": 7,
+          "score": 0
+        },
+        {
+          "position": 19,
+          "team": "COV",
+          "actualPosition": 18,
+          "score": 1
+        },
+        {
+          "position": 20,
+          "team": "HUL",
+          "actualPosition": 20,
+          "score": 5
+        }
+      ]
     }
   ],
   "estimatedTotalGoals": 1045,
-  "generatedAt": "2026-06-28T18:59:36.332Z"
+  "generatedAt": "2026-08-18T19:49:07.913Z"
 }

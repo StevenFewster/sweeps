@@ -13,6 +13,7 @@ interface ScoresTableProps {
 export default function ScoresTable({ players, estimatedTotalGoals, timestamp }: ScoresTableProps) {
   const [expandedPlayer, setExpandedPlayer] = useState<string | null>(null);
   const [copiedPlayer, setCopiedPlayer] = useState<string | null>(null);
+  const [copiedType, setCopiedType] = useState<'result' | 'picks' | null>(null);
   const [tooltipPlayer, setTooltipPlayer] = useState<string | null>(null);
 
   // Close tooltip when clicking anywhere
@@ -49,12 +50,22 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
     return `PL Sweepstake 2025/26\n${boxes} ${player.totalScore}\n${url}`;
   };
 
-  const handleShare = async (player: PlayerScore) => {
-    const shareText = generateShareText(player);
+  const generatePicksText = (player: PlayerScore) => {
+    const sortedTeams = [...player.teamScores].sort((a, b) => a.position - b.position);
+    const list = sortedTeams.map(team => `${team.position}. ${team.team}`).join('\n');
+    return `${player.name}'s Picks - PL Sweepstake 2025/26\n${list}\nTie Break: ${player.tieBreaker}`;
+  };
+
+  const handleShare = async (player: PlayerScore, type: 'result' | 'picks') => {
+    const shareText = type === 'result' ? generateShareText(player) : generatePicksText(player);
     try {
       await navigator.clipboard.writeText(shareText);
       setCopiedPlayer(player.name);
-      setTimeout(() => setCopiedPlayer(null), 2000);
+      setCopiedType(type);
+      setTimeout(() => {
+        setCopiedPlayer(null);
+        setCopiedType(null);
+      }, 2000);
     } catch (err) {
       console.error('Failed to copy:', err);
     }
@@ -174,15 +185,31 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                             ))}
                           </tbody>
                         </table>
-                        <div className="mt-4 flex justify-end">
-                          <button 
+                        <div className="mt-4 flex justify-end gap-2">
+                          <button
                             onClick={(e) => {
                               e.stopPropagation();
-                              handleShare(player);
+                              handleShare(player, 'picks');
                             }}
                             className="btn btn-sm btn-primary btn-outline"
                           >
-                            {copiedPlayer === player.name ? '✓ Copied!' : (
+                            {copiedPlayer === player.name && copiedType === 'picks' ? '✓ Copied!' : (
+                              <>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                                </svg>
+                                Share Picks
+                              </>
+                            )}
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleShare(player, 'result');
+                            }}
+                            className="btn btn-sm btn-primary btn-outline"
+                          >
+                            {copiedPlayer === player.name && copiedType === 'result' ? '✓ Copied!' : (
                               <>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />

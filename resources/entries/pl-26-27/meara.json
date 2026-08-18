@@ -1,0 +1,34 @@
+{
+  "username": "Beard",
+  "tieBreaker": 1076,
+  "predictions": [
+    {
+      "pos": 1,
+      "team": "ARS"
+    },
+    {
+      "pos": 2,
+      "team": "CHE"
+    },
+    {
+      "pos": 3,
+      "team": "MUN"
+    },
+    {
+      "pos": 4,
+      "team": "LIV"
+    },
+    {
+      "pos": 18,
+      "team": "SUN"
+    },
+    {
+      "pos": 19,
+      "team": "COV"
+    },
+    {
+      "pos": 20,
+      "team": "HUL"
+    }
+  ]
+}

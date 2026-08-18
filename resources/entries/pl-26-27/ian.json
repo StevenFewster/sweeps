@@ -1,0 +1,34 @@
+{
+  "username": "Ian",
+  "tieBreaker": 1178,
+  "predictions": [
+    {
+      "pos": 1,
+      "team": "ARS"
+    },
+    {
+      "pos": 2,
+      "team": "MCI"
+    },
+    {
+      "pos": 3,
+      "team": "CHE"
+    },
+    {
+      "pos": 4,
+      "team": "MUN"
+    },
+    {
+      "pos": 18,
+      "team": "NEW"
+    },
+    {
+      "pos": 19,
+      "team": "IPS"
+    },
+    {
+      "pos": 20,
+      "team": "HUL"
+    }
+  ]
+}
