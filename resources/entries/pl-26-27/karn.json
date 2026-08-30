@@ -1,34 +1,34 @@
 {
-"username": "Karn",
-"tieBreaker": 1028,
-"predictions": [
-{
-"pos": 1,
-"team": "MCI"
-},
-{
-"pos": 2,
-"team": "MUN"
-},
-{
-"pos": 3,
-"team": "ARS"
-},
-{
-"pos": 4,
-"team": "TOT"
-},
-{
-"pos": 18,
-"team": "COV"
-},
-{
-"pos": 19,
-"team": "HUL"
-},
-{
-"pos": 20,
-"team": "LEE"
-}
-]
+  "username": "Karn",
+  "tieBreaker": 1028,
+  "predictions": [
+    {
+      "pos": 1,
+      "team": "MCI"
+    },
+    {
+      "pos": 2,
+      "team": "MUN"
+    },
+    {
+      "pos": 3,
+      "team": "ARS"
+    },
+    {
+      "pos": 4,
+      "team": "TOT"
+    },
+    {
+      "pos": 18,
+      "team": "COV"
+    },
+    {
+      "pos": 19,
+      "team": "HUL"
+    },
+    {
+      "pos": 20,
+      "team": "LEE"
+    }
+  ]
 }

@@ -2,13 +2,13 @@ import { NavItem } from "./types";
 
 export const PL2026_NAV_ITEMS: NavItem[] = [
   { path: "/pl-2026/scores", text: "Scores" },
-  { path: "/pl-2026/table", text: "Edit Table" },
+  { path: "/pl-2026/table", text: "Table" },
 ];
 
 export const PL2027_NAV_ITEMS: NavItem[] = [
   { path: "/pl-26-27/submit-entry", text: "Enter Competition" },
   { path: "/pl-26-27/scores", text: "Scores" },
-  { path: "/pl-26-27/table", text: "Edit Table" },
+  { path: "/pl-26-27/table", text: "Table" },
 ];
 
 export const WC2026_NAV_ITEMS: NavItem[] = [
