@@ -2,33 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Stepped gradient title bar, as on stevenfewster.com category pages. */
+  .sf-banner {
+    background-image: url("./assets/radiant-gradient.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+  }
 
-.table-zebra>tbody>tr:hover {
-  @apply bg-base-200;
+  /* Flat tinted block: the site's standard card. */
+  .sf-panel {
+    @apply bg-wedgewood-50 shadow-none;
+  }
+  .sf-panel .table {
+    @apply bg-white;
+  }
+
+  /* Bordered block: used for data tables, like the site's long cards. */
+  .sf-panel-outline {
+    @apply border-2 border-gray-200 border-opacity-60 bg-white shadow-none;
+  }
+
+  /* Small tracked label, as used for post categories. */
+  .sf-eyebrow {
+    @apply text-xs font-medium uppercase tracking-widest text-wedgewood-600;
+  }
+
+  /* Left-ruled aside, as used for the site's blockquotes. */
+  .sf-aside {
+    @apply border-l-4 border-wedgewood-400 bg-white px-4 py-3 text-wedgewood-800;
+  }
+
+  /* Score tiers: one sequential teal ramp, darkest = most points. */
+  .sf-score-high {
+    @apply border-wedgewood-600 bg-wedgewood-600 text-white;
+  }
+  .sf-score-mid {
+    @apply border-wedgewood-300 bg-wedgewood-300 text-wedgewood-950;
+  }
+  .sf-score-low {
+    @apply border-wedgewood-100 bg-wedgewood-100 text-wedgewood-800;
+  }
+  .sf-score-none {
+    @apply border-gray-200 bg-white text-gray-500;
+  }
+  /* Provisional score: the group has not finished yet. */
+  .sf-score-pending {
+    @apply border-current bg-transparent text-wedgewood-700;
+  }
 }
-.table-zebra>tbody>tr.selected:hover,
-.table-zebra>tbody>tr.selected {
-  @apply bg-teal-800 border-4 border-teal-800;
+
+.table thead th {
+  @apply text-xs font-medium uppercase tracking-widest text-wedgewood-600;
 }
+.table-zebra > tbody > tr:hover {
+  @apply bg-wedgewood-100;
+}
+/* Tighter columns so all four fit on a phone without sideways scrolling. */
+@media (max-width: 767px) {
+  .sf-scores > thead th,
+  .sf-scores > tbody > tr.sf-player-row > td {
+    padding-inline: 0.5rem;
+  }
+}
+
+/* Each player is a tbody, as a player can span two rows on mobile. */
+.sf-scores > tbody:nth-of-type(even) > tr.sf-player-row {
+  @apply bg-wedgewood-50;
+}
+.sf-scores > tbody:hover > tr.sf-player-row {
+  @apply bg-wedgewood-100;
+}
+.sf-scores > tbody > tr.sf-player-row.selected {
+  @apply bg-wedgewood-100;
+  box-shadow: inset 4px 0 0 theme("colors.wedgewood.400");
+}
+
 span.tie-breaker {
-    min-width: 35px;
+  min-width: 35px;
 }
 span.diff-indicator {
-    letter-spacing: -0.2rem;
+  letter-spacing: -0.2rem;
 }
 span.pos-indicator {
   display: inline-block;
-    min-width: 35px;
+  min-width: 35px;
 }
 span.icon-indicator {
   color: transparent;
   display: inline-block;
   min-width: 25px;
   vertical-align: text-top;
-} 
+}
 .row-color-1 span.icon-indicator {
-  @apply text-blue-400;
+  @apply text-wedgewood-300;
 }
 .row-color-5 span.icon-indicator {
-  @apply text-yellow-400;
+  @apply text-wedgewood-600;
 }

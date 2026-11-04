@@ -92,7 +92,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
   };
 
   const getDifferenceColor = (diff: number) => {
-    return diff > 0 ? 'text-blue-500' : 'text-red-500';
+    return diff > 0 ? 'text-wedgewood-500' : 'text-red-500';
   };
 
   const getDifferenceIcon = (diff: number) => {
@@ -106,12 +106,12 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
   return (
     <div className="overflow-x-auto">
 
-      <div className="flex mb-4">
+      <div className="flex flex-wrap gap-x-4 mb-4 text-gray-700">
         <p className="grow">Current estimated Total Goals: <strong>{estimatedTotalGoals}</strong></p>
-        <p className='flex-none'>Last update: {formatTimestamp(timestamp)}</p>
+        <p className="flex-none text-sm text-gray-500">Last update: {formatTimestamp(timestamp)}</p>
       </div>
 
-      <table className="table table-zebra w-full">
+      <table className="table sf-scores w-full">
         <thead>
           <tr>
             <th>Pos</th>
@@ -120,49 +120,62 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
             <th>Tie Break</th>
           </tr>
         </thead>
-        <tbody>
           {players.map((player, index) => {
             const diff = getDifference(player.tieBreaker);
             const colorClass = getDifferenceColor(diff);
             const icon = getDifferenceIcon(diff);
             const dotCount = getDotCount(diff);
-            
+            const hasBars = diff !== 0;
+            const rowClass = `sf-player-row cursor-pointer ${expandedPlayer === player.name ? 'selected' : ''}`;
+            // On mobile the bars sit on their own line, so tighten the gap above them.
+            const cellClass = hasBars ? 'pb-1 md:pb-3' : '';
+
+            const renderBars = (placement: string) => (
+              <div
+                className={`tooltip ${tooltipPlayer === player.name ? 'tooltip-open' : ''} ${placement}`}
+                data-tip={`${icon}${Math.abs(diff)} from estimated total goals: ${estimatedTotalGoals}`}
+              >
+                <span
+                  className={`${colorClass} cursor-pointer diff-indicator`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setTooltipPlayer(tooltipPlayer === player.name ? null : player.name);
+                  }}
+                >
+                  {'▌'.repeat(dotCount)}
+                </span>
+              </div>
+            );
+
             return (
-              <React.Fragment key={`${player.name}-${index}`}>
+              <tbody key={`${player.name}-${index}`}>
                 <tr
                   onClick={() => togglePlayer(player.name)}
-                  className={`cursor-pointer ${expandedPlayer === player.name ? 'selected' : ''}`}
+                  className={`${rowClass} ${hasBars ? 'border-b-0 md:border-b' : ''}`}
                 >
-                  <td>{index + 1}</td>
-                  <td className="font-semibold">{player.name}</td>
-                  <td>{player.totalScore}</td>
-                  <td>
+                  <td className={cellClass}>{index + 1}</td>
+                  <td className={`font-semibold ${cellClass}`}>{player.name}</td>
+                  <td className={cellClass}>{player.totalScore}</td>
+                  <td className={cellClass}>
                     <div className="flex items-center gap-4">
                       <span className='tie-breaker'>{player.tieBreaker}</span>
-                      {diff !== 0 && (
-                        <div 
-                          className={`tooltip ${tooltipPlayer === player.name ? 'tooltip-open' : ''} tooltip-left`}
-                          data-tip={`${icon}${Math.abs(diff)} from estimated total goals: ${estimatedTotalGoals}`}
-                        >
-                          <span 
-                            className={`${colorClass} cursor-pointer diff-indicator`}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              setTooltipPlayer(tooltipPlayer === player.name ? null : player.name);
-                            }}
-                          >
-                            {'▌'.repeat(dotCount)}
-                          </span>
-                        </div>
-                      )}
+                      {hasBars && <div className="hidden md:block">{renderBars('tooltip-left')}</div>}
                     </div>
                   </td>
                 </tr>
+                {hasBars && (
+                  <tr onClick={() => togglePlayer(player.name)} className={`${rowClass} md:hidden`}>
+                    <td className="pt-0" />
+                    <td colSpan={3} className="pt-0">
+                      {renderBars('tooltip-top block w-full text-left')}
+                    </td>
+                  </tr>
+                )}
                 {expandedPlayer === player.name && (
-                  <tr className="border-4 border-teal-800">
-                    <td colSpan={4} className="bg-base-200 p-0">
+                  <tr className="border-b-2 border-wedgewood-200">
+                    <td colSpan={4} className="bg-wedgewood-50 p-0">
                       <div className="p-4">
-                        <table className="table table-sm w-full">
+                        <table className="table table-zebra table-sm w-full bg-white">
                           <thead>
                             <tr>
                               <th>Pos</th>
@@ -185,7 +198,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                             ))}
                           </tbody>
                         </table>
-                        <div className="mt-4 flex justify-end gap-2">
+                        <div className="mt-4 flex flex-wrap justify-end gap-2">
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
@@ -223,10 +236,9 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                     </td>
                   </tr>
                 )}
-              </React.Fragment>
+              </tbody>
             );
           })}
-        </tbody>
       </table>
     </div>
   );

@@ -42,19 +42,24 @@ function SortableTeamRow({ team, index }: SortableTeamRowProps) {
   // Determine row styling based on position
   let rowClass = '';
   if (index < 4) {
-    rowClass = 'bg-success/20'; // Top 4
+    rowClass = 'bg-wedgewood-100'; // Top 4
   } else if (index >= 17) {
-    rowClass = 'bg-error/20'; // Bottom 3
+    rowClass = 'bg-red-50'; // Bottom 3
   }
 
   return (
     <tr ref={setNodeRef} style={style} className={rowClass}>
       <td {...attributes} {...listeners} className="cursor-move">
-        <span className="text-lg">☰</span>
+        <span className="text-lg text-wedgewood-500">☰</span>
       </td>
       <td>{index + 1}</td>
-      <td>{team.shortName}</td>
-      <td>{team.name}</td>
+      <td className="hidden md:table-cell">{team.shortName}</td>
+      <td>
+        <div className="flex">
+          <span className="w-10 shrink-0 font-medium md:hidden">{team.shortName}</span>{" "}
+          <span>{team.name}</span>
+        </div>
+      </td>
     </tr>
   );
 }
@@ -135,15 +140,15 @@ export default function LeagueTableEditor({
 
   return (
     <div className="space-y-6">
-      <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box">
+      <div className="card sf-panel-outline">
         <div className="card-body p-2 md:p-4">
-          <h2 className="card-title mb-4">League Table</h2>
-          <p className="text-sm text-base-content/70 mb-4">
-            Drag and drop teams to reorder the table. Top 4 are highlighted in green, bottom 3 in red.
+          <p className="text-sm text-gray-600 mb-4">
+            Drag and drop teams to reorder the table. Top 4 are highlighted in teal, bottom 3 in red.
           </p>
           
           <div className="overflow-x-auto">
             <DndContext
+              id="league-table"
               sensors={sensors}
               collisionDetection={closestCenter}
               onDragEnd={handleDragEnd}
@@ -153,7 +158,7 @@ export default function LeagueTableEditor({
                   <tr>
                     <th></th>
                     <th>Position</th>
-                    <th>Short Name</th>
+                    <th className="hidden md:table-cell">Short Name</th>
                     <th>Name</th>
                   </tr>
                 </thead>
@@ -177,9 +182,9 @@ export default function LeagueTableEditor({
         </div>
       </div>
 
-      <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box">
+      <div className="card sf-panel">
         <div className="card-body">
-          <h2 className="card-title mb-4">Season Stats</h2>
+          <h2 className="text-lg font-medium mb-2">Season Stats</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="form-control">
@@ -227,7 +232,7 @@ export default function LeagueTableEditor({
 
           <div className="card-actions justify-end mt-6">
             <button
-              className={`btn ${copied ? 'btn-success' : 'btn-primary'}`}
+              className={`btn btn-primary`}
               onClick={handleSave}
             >
               {copied ? '✓ Copied to Clipboard!' : 'Save & Copy JSON'}

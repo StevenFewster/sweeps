@@ -36,7 +36,7 @@ function TooltipCard({
         transform: "translate(-50%, calc(-100% - 6px))",
       }}
     >
-      <div className="card card-compact bg-base-100 shadow-xl border border-base-300 w-44 text-left">
+      <div className="card card-compact bg-base-100 shadow-md border border-wedgewood-200 w-44 text-left">
         <div className="card-body p-2 gap-0.5">{children}</div>
       </div>
     </div>
@@ -52,16 +52,14 @@ function useScrollToDismiss(visible: boolean, onDismiss: () => void) {
 }
 
 function scoreBadgeClass(score: number, groupPlayed?: number | null): string {
-  let base = "badge badge-xs font-bold";
-  if (score === 3 || score === 5) base = `${base} badge-warning`;
-  if (score === 2) base = `${base} badge-accent`;
-  if (score === 1) base = `${base} badge-info`;
+  const base = "badge badge-xs font-bold";
   if (groupPlayed !== undefined && groupPlayed !== null && groupPlayed !== 3) {
-    base = `${base} badge-outline`;
-  } else {
-    base = `${base} text-gray-80`;
+    return `${base} sf-score-pending`;
   }
-  return `${base}`;
+  if (score === 3 || score === 5) return `${base} sf-score-high`;
+  if (score === 2) return `${base} sf-score-mid`;
+  if (score === 1) return `${base} sf-score-low`;
+  return `${base} sf-score-none`;
 }
 
 export function WcGroupScoreCell({

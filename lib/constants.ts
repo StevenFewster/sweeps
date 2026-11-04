@@ -1,5 +1,9 @@
 import { NavItem } from "./types";
 
+export const PL2026_NAME = "Premier League 2025/26";
+export const PL2027_NAME = "Premier League 2026/27";
+export const WC2026_NAME = "World Cup 2026";
+
 export const PL2026_NAV_ITEMS: NavItem[] = [
   { path: "/pl-2026/scores", text: "Scores" },
   { path: "/pl-2026/table", text: "Table" },
