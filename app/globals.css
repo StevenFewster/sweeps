@@ -58,8 +58,22 @@
 .table-zebra > tbody > tr:hover {
   @apply bg-wedgewood-100;
 }
-.table-zebra > tbody > tr.selected,
-.table-zebra > tbody > tr.selected:hover {
+/* Tighter columns so all four fit on a phone without sideways scrolling. */
+@media (max-width: 767px) {
+  .sf-scores > thead th,
+  .sf-scores > tbody > tr.sf-player-row > td {
+    padding-inline: 0.5rem;
+  }
+}
+
+/* Each player is a tbody, as a player can span two rows on mobile. */
+.sf-scores > tbody:nth-of-type(even) > tr.sf-player-row {
+  @apply bg-wedgewood-50;
+}
+.sf-scores > tbody:hover > tr.sf-player-row {
+  @apply bg-wedgewood-100;
+}
+.sf-scores > tbody > tr.sf-player-row.selected {
   @apply bg-wedgewood-100;
   box-shadow: inset 4px 0 0 theme("colors.wedgewood.400");
 }
