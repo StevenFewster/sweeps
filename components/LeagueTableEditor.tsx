@@ -53,8 +53,13 @@ function SortableTeamRow({ team, index }: SortableTeamRowProps) {
         <span className="text-lg text-wedgewood-500">☰</span>
       </td>
       <td>{index + 1}</td>
-      <td>{team.shortName}</td>
-      <td>{team.name}</td>
+      <td className="hidden md:table-cell">{team.shortName}</td>
+      <td>
+        <div className="flex">
+          <span className="w-10 shrink-0 font-medium md:hidden">{team.shortName}</span>{" "}
+          <span>{team.name}</span>
+        </div>
+      </td>
     </tr>
   );
 }
@@ -153,7 +158,7 @@ export default function LeagueTableEditor({
                   <tr>
                     <th></th>
                     <th>Position</th>
-                    <th>Short Name</th>
+                    <th className="hidden md:table-cell">Short Name</th>
                     <th>Name</th>
                   </tr>
                 </thead>
