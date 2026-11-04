@@ -1,7 +1,7 @@
 "use client";
 
-import PageNav from "@/components/PageNav";
-import { WC2026_NAV_ITEMS } from "@/lib/constants";
+import PageLayout from "@/components/PageLayout";
+import { WC2026_NAV_ITEMS, WC2026_NAME } from "@/lib/constants";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import wcTableData from "@/public/wc-table.json";
@@ -150,9 +150,9 @@ function CountryDropdown({
         <div
           tabIndex={0}
           role="button"
-          className={`btn w-full justify-between font-normal border bg-base-100 hover:bg-base-200 hover:border-base-300 ${hasError ? "border-error text-error hover:border-error hover:text-error hover:bg-base-100" : "border-base-300 text-base-content"}`}
+          className={`btn w-full justify-between font-normal border bg-base-100 hover:bg-base-100 ${hasError ? "border-error text-error hover:border-error hover:text-error hover:bg-base-100" : "border-gray-300 text-base-content hover:border-wedgewood-400"}`}
         >
-          <span className={selected ? "" : "text-base-content/40"}>
+          <span className={selected ? "" : "text-gray-500"}>
             {selected ? `${FLAGS[selected] ?? "🏳️"} ${selected}` : placeholder}
           </span>
           <svg
@@ -172,7 +172,7 @@ function CountryDropdown({
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content menu bg-base-100 rounded-box z-[999] w-full p-2 shadow-lg border border-base-300 mt-1 max-h-60 overflow-y-auto flex-nowrap"
+          className="dropdown-content menu bg-base-100 rounded-box z-[999] w-full p-2 shadow-md border border-wedgewood-200 mt-1 max-h-60 overflow-y-auto flex-nowrap"
         >
           {countries.map((country) => (
             <li key={country.name}>
@@ -255,7 +255,7 @@ function StepDetails({
             Tie Break — Total yellow cards across the tournament
           </span>
         </label>
-        <p className="text-sm text-base-content/60 mb-2">
+        <p className="text-sm text-gray-600 mb-2">
           Predict how many yellow cards will be issued across all 104 matches.
           The record is <strong>345</strong> set at the 2006 World Cup (64
           matches).
@@ -420,71 +420,71 @@ export default function SubmitEntryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-base-200 md:p-4">
-      <div className="max-w-6xl mx-auto">
-        <PageNav navItems={WC2026_NAV_ITEMS}>Enter Competition</PageNav>
+    <PageLayout
+      title="Enter Competition"
+      competition={WC2026_NAME}
+      navItems={WC2026_NAV_ITEMS}
+    >
+      <ul className="steps w-full mb-6 px-2">
+        {STEPS.map((label, i) => (
+          <li
+            key={label}
+            className={`step text-xs ${i <= step ? "step-primary" : ""}`}
+          >
+            {label}
+          </li>
+        ))}
+      </ul>
 
-        <ul className="steps w-full mb-6 px-2">
-          {STEPS.map((label, i) => (
-            <li
-              key={label}
-              className={`step text-xs ${i <= step ? "step-primary" : ""}`}
+      <div className="card sf-panel">
+        <div className="card-body p-6">
+          <h2 className="text-lg font-medium mb-4">{STEPS[step]}</h2>
+
+          {step === 0 && (
+            <StepDetails data={formData} onChange={patchFormData} />
+          )}
+          {step === 1 && (
+            <StepGroupStage
+              predictions={formData.groupPredictions}
+              onChange={setGroupPrediction}
+            />
+          )}
+          {step === 2 && (
+            <StepFinals
+              predictions={formData.finalsPredictions}
+              onChange={setFinalsPrediction}
+            />
+          )}
+
+          <div className="flex justify-between mt-8">
+            <button
+              className="btn btn-ghost"
+              onClick={() => setStep((s) => s - 1)}
+              disabled={step === 0}
             >
-              {label}
-            </li>
-          ))}
-        </ul>
+              ← Back
+            </button>
 
-        <div className="card bg-base-100 shadow-xl rounded-none md:rounded-box">
-          <div className="card-body p-6">
-            <h2 className="card-title text-xl mb-6">{STEPS[step]}</h2>
-
-            {step === 0 && (
-              <StepDetails data={formData} onChange={patchFormData} />
-            )}
-            {step === 1 && (
-              <StepGroupStage
-                predictions={formData.groupPredictions}
-                onChange={setGroupPrediction}
-              />
-            )}
-            {step === 2 && (
-              <StepFinals
-                predictions={formData.finalsPredictions}
-                onChange={setFinalsPrediction}
-              />
-            )}
-
-            <div className="flex justify-between mt-8">
+            {isLast ? (
               <button
-                className="btn btn-ghost"
-                onClick={() => setStep((s) => s - 1)}
-                disabled={step === 0}
+                className="btn btn-primary"
+                onClick={handleSubmit}
+                disabled={!canProceed}
               >
-                ← Back
+                Submit Entry
               </button>
-
-              {isLast ? (
-                <button
-                  className="btn btn-primary"
-                  onClick={handleSubmit}
-                  disabled={!canProceed}
-                >
-                  Submit Entry
-                </button>
-              ) : (
-                <button
-                  className="btn btn-primary"
-                  onClick={() => setStep((s) => s + 1)}
-                  disabled={!canProceed}
-                >
-                  Next →
-                </button>
-              )}
-            </div>
+            ) : (
+              <button
+                className="btn btn-primary"
+                onClick={() => setStep((s) => s + 1)}
+                disabled={!canProceed}
+              >
+                Next →
+              </button>
+            )}
           </div>
         </div>
       </div>
-    </div>
+    </PageLayout>
   );
 }

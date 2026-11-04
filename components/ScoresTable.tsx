@@ -92,7 +92,7 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
   };
 
   const getDifferenceColor = (diff: number) => {
-    return diff > 0 ? 'text-blue-500' : 'text-red-500';
+    return diff > 0 ? 'text-wedgewood-500' : 'text-red-500';
   };
 
   const getDifferenceIcon = (diff: number) => {
@@ -106,9 +106,9 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
   return (
     <div className="overflow-x-auto">
 
-      <div className="flex mb-4">
+      <div className="flex flex-wrap gap-x-4 mb-4 text-gray-700">
         <p className="grow">Current estimated Total Goals: <strong>{estimatedTotalGoals}</strong></p>
-        <p className='flex-none'>Last update: {formatTimestamp(timestamp)}</p>
+        <p className="flex-none text-sm text-gray-500">Last update: {formatTimestamp(timestamp)}</p>
       </div>
 
       <table className="table table-zebra w-full">
@@ -159,10 +159,10 @@ export default function ScoresTable({ players, estimatedTotalGoals, timestamp }:
                   </td>
                 </tr>
                 {expandedPlayer === player.name && (
-                  <tr className="border-4 border-teal-800">
-                    <td colSpan={4} className="bg-base-200 p-0">
+                  <tr className="border-b-2 border-wedgewood-200">
+                    <td colSpan={4} className="bg-wedgewood-50 p-0">
                       <div className="p-4">
-                        <table className="table table-sm w-full">
+                        <table className="table table-sm w-full bg-white">
                           <thead>
                             <tr>
                               <th>Pos</th>

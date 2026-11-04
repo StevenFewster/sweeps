@@ -48,14 +48,14 @@ export default function WcShareButton({
   return (
     <span className="relative inline-flex items-center">
       {copied && (
-        <span className="absolute bottom-full left-0 mb-1 whitespace-nowrap rounded bg-neutral text-neutral-content text-xs px-2 py-0.5 pointer-events-none animate-fade-out z-10">
+        <span className="absolute bottom-full left-0 mb-1 whitespace-nowrap rounded bg-wedgewood-900 text-wedgewood-50 text-xs px-2 py-0.5 pointer-events-none animate-fade-out z-10">
           Copied to clipboard!
         </span>
       )}
     <button
       onClick={handleShare}
       title="Copy picks to clipboard"
-      className="btn btn-neutral btn-xs p-0 min-h-0 h-auto mr-1 text-base-content/40 hover:text-base-content"
+      className="btn btn-ghost btn-xs p-0.5 min-h-0 h-auto mr-1 text-wedgewood-500 hover:text-wedgewood-800"
     >
       {copied ? (
         <svg
@@ -76,6 +76,8 @@ export default function WcShareButton({
           viewBox="0 0 24 24"
           width="16"
           fill="currentColor"
+          stroke="currentColor"
+          strokeWidth={2}
           className="w-3.5 h-3.5"
         >
           {" "}
